@@ -48,17 +48,17 @@ function App() {
   ]);
 
   return (
-    <Router>
-      <div className="container">
-        <Navigation />
+    <div className="container">
+      <Navigation />
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio project={project} />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="portfolio" element={<Portfolio project={project} />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="resume" element={<Resume />} />
         </Routes>
-      </div>
-    </Router>
+      </BrowserRouter>
+    </div>
   );
 }
 
