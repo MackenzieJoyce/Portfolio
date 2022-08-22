@@ -1,3 +1,5 @@
+import { FaGithub, FaTwitterSquare } from 'react-icons/fa'
+
 const Contact = () => {
   return (
     <div className="card">
@@ -6,6 +8,7 @@ const Contact = () => {
         <h6 className="card-subtitle text-muted">Social Media</h6>
         {/* Add icons for each span */}
         <span className="card-text">
+          <FaGithub />
           <a
             href="https://github.com/MackenzieJoyce"
             target="_blank"
@@ -15,6 +18,7 @@ const Contact = () => {
           </a>
         </span>
         <span>
+          <FaTwitterSquare />
           <a
             href="https://twitter.com/FreshCodeFish"
             target="_blank"
