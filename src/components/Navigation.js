@@ -8,6 +8,9 @@ import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Resume from './Resume';
 
+import project from '../project';
+
+
 const Navigation = () => {
   // Says which tab is currently clicked
   const [selectedTab, setSelectedTab] = React.useState(0);
@@ -32,7 +35,7 @@ const Navigation = () => {
       {/* Says: When the tab selected is at # it will show the specific page info */}
       {/* This is sorta like a turnary but not */}
       {selectedTab === 0 && <About />}
-      {selectedTab === 1 && <Portfolio />}
+      {selectedTab === 1 && <Portfolio project={project} />}
       {selectedTab === 2 && <Contact />}
       {selectedTab === 3 && <Resume />}
     </header>
