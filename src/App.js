@@ -56,6 +56,15 @@ function App() {
           <Route path="portfolio" element={<Portfolio project={project} />} />
           <Route path="contact" element={<Contact />} />
           <Route path="resume" element={<Resume />} />
+          {/* If they try anything else it all explodes */}
+          <Route
+            path="*"
+            element={
+              <main style={{ padding: '1rem' }}>
+                <p>there's nothing here!</p>
+              </main>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </div>
