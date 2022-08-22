@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navigation from './components/Navigation';
 import About from './components/About';
@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 
 function App() {
-  const [project, setProject] = useState([
+  const project = [
     {
       id: 1,
       title: 'Backyard Jungle',
@@ -45,26 +45,26 @@ function App() {
       text: 'Install the app and take your notes on the go',
       tech: 'Back-End JavaScript'
     }
-  ]);
+  ];
 
   return (
     <div className="container">
       <Navigation />
       <Router>
         <Routes>
-          <Route path="/" element={<About />} />
+          {/* <Route path="/" element={<About />} />
           <Route path="portfolio" element={<Portfolio project={project} />} />
           <Route path="contact" element={<Contact />} />
           <Route path="resume" element={<Resume />} />
-          {/* If they try anything else it all explodes */}
-          <Route
+          If they try anything else it all explodes */}
+          {/* <Route
             path="*"
             element={
               <main style={{ padding: '1rem' }}>
                 <p>there's nothing here!</p>
               </main>
             }
-          />
+          /> */}
         </Routes>
       </Router>
     </div>
