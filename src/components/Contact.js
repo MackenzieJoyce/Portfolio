@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FaGithub, FaTwitterSquare, FaDiscord, FaDice20 } from 'react-icons/fa';
+import { FaGithub, FaTwitterSquare, FaDiscord } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -33,10 +33,10 @@ const Contact = () => {
           <FaDiscord />
           Discord: MackenzieJoyce#5843
         </span>
-        <span>
+        {/* <span>
           <FaDice20 />
           Roll20: RollingUpRoses
-        </span>
+        </span> */}
         {/* <span className="card-text">LinkedIn</span>
         <span className="card-text">Share this portfolio</span> */}
 
