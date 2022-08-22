@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navigation from './components/Navigation';
 import About from './components/About';
-import Portofolio from './components/Portfolio';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -52,19 +53,21 @@ function App() {
         <Route
           path="/"
           element={
-            <>
               <About />
-            </>
           }
         />
         <Route 
           path='/portfolio'
           element={
-            <>
               <Portfolio
                 project={project}
               />
-            </>
+          }
+        />
+        <Route 
+          path='/contact'
+          element={
+              <Contact />
           }
         />
       </Routes>
