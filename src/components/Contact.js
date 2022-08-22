@@ -1,4 +1,4 @@
-import { FaGithub, FaTwitterSquare } from 'react-icons/fa'
+import { FaGithub, FaTwitterSquare, FaDiscord, FaDice20 } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -14,7 +14,7 @@ const Contact = () => {
             target="_blank"
             title="Github: MackenzieJoyce"
           >
-            GitHub
+            GitHub: MackenzieJoyce
           </a>
         </span>
         <span>
@@ -24,8 +24,16 @@ const Contact = () => {
             target="_blank"
             title="Twitter: FreshCodeFish"
           >
-            Twitter
+            Twitter: FreshCodeFish
           </a>
+        </span>
+        <span>
+          <FaDiscord />
+          Discord: MackenzieJoyce#5843
+        </span>
+        <span>
+          <FaDice20 />
+          Roll20: RollingUpRoses
         </span>
         {/* <span className="card-text">LinkedIn</span>
         <span className="card-text">Share this portfolio</span> */}
