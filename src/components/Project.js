@@ -1,8 +1,9 @@
 // I want this structure to be added to every project in the array
 // I really don't think the expressions will fill in like that, but it gives me an idea on where to start
 
-// Taken from  https://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/ 
+// Taken from  https://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/
 
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const Project = ({ project }) => {

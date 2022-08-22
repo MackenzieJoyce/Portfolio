@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { FaGithub, FaTwitterSquare, FaDiscord, FaDice20 } from 'react-icons/fa';
 
 const Contact = () => {

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navigation from './components/Navigation';
-// import About from './components/About';
-// import Portfolio from './components/Portfolio';
-// import Contact from './components/Contact';
-// import Resume from './components/Resume';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 function App() {
   const [project, setProject] = useState([
@@ -50,7 +50,7 @@ function App() {
   return (
     <div className="container">
       <Navigation />
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="portfolio" element={<Portfolio project={project} />} />
@@ -66,7 +66,7 @@ function App() {
             }
           />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }

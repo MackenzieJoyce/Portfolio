@@ -1,4 +1,6 @@
-// I think id needs to be useId 
+// I think id needs to be useId
+import React from 'react';
+
 
 const Resume = () => {
   return (
