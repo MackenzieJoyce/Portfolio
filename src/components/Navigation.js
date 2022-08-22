@@ -1,14 +1,24 @@
-const Navigation = ({ }) => { 
-    return ( 
-        <header>
-            <nav>
-                <h3>About</h3>
-                <h3>Portfolio</h3>
-                <h3>Contact</h3>
-                <h3>Resume</h3>
-            </nav>
-        </header>
-    )
-}
+import { Link } from 'react-router-dom';
 
-export default Navigation 
+const Navigation = () => {
+  return (
+    <header>
+      <nav>
+        <h3>
+          <Link to="/">About</Link>
+        </h3>
+        <h3>
+          <Link to="/portfolio">Portfolio</Link>
+        </h3>
+        <h3>
+          <Link to="/contact">Contact</Link>
+        </h3>
+        <h3>
+          <Link to="/resume">Resume</Link>
+        </h3>
+      </nav>
+    </header>
+  );
+};
+
+export default Navigation;
