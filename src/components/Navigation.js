@@ -3,10 +3,10 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { FaUser, FaCode, FaPhone, FaFileAlt } from 'react-icons/fa';
 
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
+import About from './About';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
+import Resume from './Resume';
 
 const Navigation = () => {
   // Says which tab is currently clicked
