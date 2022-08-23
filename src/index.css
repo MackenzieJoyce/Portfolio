@@ -26,6 +26,12 @@ body {
   color: var(--light);
 }
 
+header { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 700;
