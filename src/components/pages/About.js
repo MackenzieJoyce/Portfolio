@@ -21,13 +21,13 @@ const About = () => {
     return ( 
         <div className="content" style={styles.contentEntire}>
             <div style={styles.contentIndiv}>
-                {/* <img></img> */}
+                <img className="title" src="../../../Assets/Business Profile" alt="Mackenzie Joyce"></img>
                 <h1>
                     Mackenzie Joyce
                 </h1>
             </div>
             <div style={styles.contentIndiv}>
-                <h2>
+                <h2 className="title">
                     Front-End Web Developer
                 </h2>
                 <p>
