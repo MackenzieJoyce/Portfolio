@@ -1,70 +1,81 @@
 import React from 'react';
-
 import { FaGithub, FaTwitterSquare, FaDiscord } from 'react-icons/fa';
+
+import EmailForm from './EmailForm';
+
+const styles = {
+  title: {
+    textAlign: 'center',
+    marginBottom: 30,
+  },
+  list: {
+    fontSize: '1.5rem',
+    display: 'flex',
+    flexDirection: 'column'
+  },
+  span: {
+    marginBottom: 40,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
+  }
+};
 
 const Contact = () => {
   return (
-    <div className="card">
-      <div className="card-body">
-        <h5 className="card-title">Get in touch!</h5>
-        <h6 className="card-subtitle text-muted">Social Media</h6>
-        {/* Add icons for each span */}
-        <span className="card-text">
-          <FaGithub />
-          <a
-            href="https://github.com/MackenzieJoyce"
-            // target="_blank"
-            title="Github: MackenzieJoyce"
-          >
-            GitHub: MackenzieJoyce
-          </a>
-        </span>
-        <span>
-          <FaTwitterSquare />
-          <a
-            href="https://twitter.com/FreshCodeFish"
-            // target="_blank"
-            title="Twitter: FreshCodeFish"
-          >
-            Twitter: FreshCodeFish
-          </a>
-        </span>
-        <span>
-          <FaDiscord />
-          Discord: MackenzieJoyce#5843
-        </span>
-        {/* <span>
+    <div>
+      <h3 style={styles.title}>Get In Touch</h3>
+      <div className="container">
+        <h3 className='title'>Check me out</h3>
+        <div style={styles.list}>
+          <span style={styles.span}>
+            <FaGithub />
+            <a
+              href="https://github.com/MackenzieJoyce"
+              // target="_blank"
+              title="Github: MackenzieJoyce"
+            >
+              MackenzieJoyce
+            </a>
+          </span>
+          <span style={styles.span}>
+            <FaTwitterSquare />
+            <a
+              href="https://twitter.com/FreshCodeFish"
+              // target="_blank"
+              title="Twitter: FreshCodeFish"
+            >
+              FreshCodeFish
+            </a>
+          </span>
+          <span style={styles.span}>
+            <FaDiscord />
+            MackenzieJoyce#5843
+          </span>
+          {/* <span>
           <FaDice20 />
           Roll20: RollingUpRoses
         </span> */}
-        {/* <span className="card-text">LinkedIn</span>
-        <span className="card-text">Share this portfolio</span> */}
+          {/* <span>LinkedIn</span>
+        <span>Share this portfolio</span> */}
+{/* 
+          <span>
+            Phone
+            <a href="tel:321.234.5397" title="Phone number: 321.234.5397">
+              321.234.5397
+            </a>
+          </span> */}
 
-        <h6 className="card-subtitle text-muted">Phone</h6>
-        <p className="card-text">
-          <a href="tel:321.234.5397" title="Phone number: 321.234.5397">
-            321.234.5397
-          </a>
-        </p>
-
-        <h6 className="card-subtitle text-muted">Email</h6>
-        <p className="card-text">
-          {' '}
-          <a
-            href="mailto:MackenzieJoyce414@gmail.com"
-            // target="_blank"
-            title="Email Address: MackenzieJoyce414@gmail.com"
-          >
-            MackenzieJoyce414@gmail.com
-          </a>
-        </p>
+          {/* <span style={styles.span}>Email</span> */}
+        </div>
       </div>
+      <EmailForm />
     </div>
   );
 };
 
-// target _blank's are giving errors 
+// target _blank's are giving errors
 
-// Add the EmailForm so you can toggle the option 
+// Add the EmailForm so you can toggle the option
 
 export default Contact;

@@ -52,7 +52,7 @@ const EmailForm = () => {
 
   return (
     <div className="container">
-      <h3>Can't wait? Email me now!</h3>
+      <h3 className='title'>Can't wait? Email me now!</h3>
       <form onSubmit={handleSubmit}>
         <div style={styles.control}>
           <label htmlFor="name" style={styles.label}>
