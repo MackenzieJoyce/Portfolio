@@ -74,3 +74,14 @@ img {
   object-fit: contain;
 }
 
+.container {
+  max-width: 500px;
+  min-height: 300px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.16);
+  border-radius: 5px;
+  border: 1px solid steelblue;
+  text-align: center;
+  overflow: auto;
+}

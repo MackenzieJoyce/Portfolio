@@ -1,17 +1,6 @@
 import React, { useState } from 'react';
 
 const styles = {
-  container: {
-    textAlign: 'center',
-    maxWidth: 500,
-    minHeight: 300,
-    margin: '30px auto',
-    padding: 30,
-    backgroundColor: 'rgba(255, 255, 255, 0.16)',
-    borderRadius: 5,
-    border: '1px solid steelblue',
-    overflow: 'auto'
-  },
   label: {
     textAlign: 'left',
     display: 'block'
@@ -62,7 +51,7 @@ const EmailForm = () => {
   };
 
   return (
-    <div className="container" style={styles.container}>
+    <div className="container">
       <h3>Can't wait? Email me now!</h3>
       <form onSubmit={handleSubmit}>
         <div style={styles.control}>
