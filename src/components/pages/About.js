@@ -3,8 +3,9 @@ import React from 'react';
 const styles = {
     contentEntire: {
         textAlign: 'center',
-        border: '2px solid lightblue',
+        border: '1px solid steelblue',
         borderRadius: 5,
+        boxShadow: '0 0 3px 3px rgba(33, 203, 243, .3)',
         background: 'grey',
         minHeight: 500,
         margin: '0 30px',
