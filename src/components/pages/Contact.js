@@ -6,7 +6,7 @@ import EmailForm from './compPlugins/EmailForm';
 const styles = {
   title: {
     textAlign: 'center',
-    marginBottom: 30,
+    marginBottom: 30
   },
   list: {
     fontSize: '1.5rem',
@@ -23,42 +23,44 @@ const styles = {
 
 const Contact = () => {
   return (
-    <div className="content">
+    <>
       <h3 style={styles.title}>Get In Touch</h3>
-      <div className="container">
-        <h3 className='title'>Check me out</h3>
-        <div style={styles.list}>
-          <span style={styles.span}>
-            <FaGithub />
-            <a
-              href="https://github.com/MackenzieJoyce"
-              // target="_blank"
-              title="Github: MackenzieJoyce"
-            >
-              MackenzieJoyce
-            </a>
-          </span>
-          <span style={styles.span}>
-            <FaTwitterSquare />
-            <a
-              href="https://twitter.com/FreshCodeFish"
-              // target="_blank"
-              title="Twitter: FreshCodeFish"
-            >
-              FreshCodeFish
-            </a>
-          </span>
-          <span style={styles.span}>
-            <FaDiscord />
-            MackenzieJoyce#5843
-          </span>
-          {/* <span>
+
+      <div className="content">
+        <div className="container">
+          <h3 className="title">Check me out</h3>
+          <div style={styles.list}>
+            <span style={styles.span}>
+              <FaGithub />
+              <a
+                href="https://github.com/MackenzieJoyce"
+                // target="_blank"
+                title="Github: MackenzieJoyce"
+              >
+                MackenzieJoyce
+              </a>
+            </span>
+            <span style={styles.span}>
+              <FaTwitterSquare />
+              <a
+                href="https://twitter.com/FreshCodeFish"
+                // target="_blank"
+                title="Twitter: FreshCodeFish"
+              >
+                FreshCodeFish
+              </a>
+            </span>
+            <span style={styles.span}>
+              <FaDiscord />
+              MackenzieJoyce#5843
+            </span>
+            {/* <span>
           <FaDice20 />
           Roll20: RollingUpRoses
         </span> */}
-          {/* <span>LinkedIn</span>
+            {/* <span>LinkedIn</span>
         <span>Share this portfolio</span> */}
-{/* 
+            {/* 
           <span>
             Phone
             <a href="tel:321.234.5397" title="Phone number: 321.234.5397">
@@ -66,11 +68,12 @@ const Contact = () => {
             </a>
           </span> */}
 
-          {/* <span style={styles.span}>Email</span> */}
+            {/* <span style={styles.span}>Email</span> */}
+          </div>
         </div>
+        <EmailForm />
       </div>
-      <EmailForm />
-    </div>
+    </>
   );
 };
 
