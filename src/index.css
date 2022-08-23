@@ -75,6 +75,13 @@ img {
   object-fit: contain;
 }
 
+.content
+{ 
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
 .container {
   max-width: 500px;
   min-height: 300px;
