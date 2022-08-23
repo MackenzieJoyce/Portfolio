@@ -1,5 +1,4 @@
 import React from 'react';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { FaUser, FaCode, FaPhone, FaFileAlt } from 'react-icons/fa';
@@ -14,19 +13,6 @@ import Resume from './components/Resume';
 import project from './project';
 
 const App = () => {
-  const theme = createTheme({
-    components: {
-      MuiButton: {
-        styleOverrides: {
-          root: {
-            backgroundColor: 'rgb(12, 12, 12)',
-            color: '#fff'
-          }
-        }
-      }
-    }
-  });
-
   // Says which tab is currently clicked
   const [selectedTab, setSelectedTab] = React.useState(0);
 
@@ -36,7 +22,6 @@ const App = () => {
   };
 
   return (
-    <ThemeProvider theme={theme}>
       <header>
         <Tabs
           value={selectedTab}
@@ -56,7 +41,6 @@ const App = () => {
         {selectedTab === 2 && <Contact />}
         {selectedTab === 3 && <Resume />}
       </header>
-    </ThemeProvider>
   );
 };
 
