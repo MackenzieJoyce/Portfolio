@@ -87,7 +87,7 @@ img {
   justify-content: space-around;
   width: 100%;
 }
-
+/* 
 .container {
   max-width: 500px;
   min-height: 300px;
@@ -99,6 +99,22 @@ img {
   box-shadow: 0 0 3px 3px rgba(33, 203, 243, .3);
   text-align: center;
   overflow: auto;
+} */
+
+.contentEntire {
+  text-align: center;
+  border: 1px solid steelblue;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 3px rgba(33, 203, 243, .3);
+  background: rgba(255, 255, 255, 0.16);
+  min-height: 500px;
+  margin-top: 2%;
+  padding-top: 2%;
+  width: 80%
+} 
+
+.contentIndiv {
+  width: 30%
 }
 
 .title {
