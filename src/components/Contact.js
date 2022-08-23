@@ -4,11 +4,6 @@ import { FaGithub, FaTwitterSquare, FaDiscord } from 'react-icons/fa';
 
 const Contact = () => {
   return (
-
-
-
-
-    
     <div className="card">
       <div className="card-body">
         <h5 className="card-title">Get in touch!</h5>
@@ -18,7 +13,7 @@ const Contact = () => {
           <FaGithub />
           <a
             href="https://github.com/MackenzieJoyce"
-            target="_blank"
+            // target="_blank"
             title="Github: MackenzieJoyce"
           >
             GitHub: MackenzieJoyce
@@ -28,7 +23,7 @@ const Contact = () => {
           <FaTwitterSquare />
           <a
             href="https://twitter.com/FreshCodeFish"
-            target="_blank"
+            // target="_blank"
             title="Twitter: FreshCodeFish"
           >
             Twitter: FreshCodeFish
@@ -57,7 +52,7 @@ const Contact = () => {
           {' '}
           <a
             href="mailto:MackenzieJoyce414@gmail.com"
-            target="_blank"
+            // target="_blank"
             title="Email Address: MackenzieJoyce414@gmail.com"
           >
             MackenzieJoyce414@gmail.com
@@ -67,5 +62,9 @@ const Contact = () => {
     </div>
   );
 };
+
+// target _blank's are giving errors 
+
+// Add the EmailForm so you can toggle the option 
 
 export default Contact;
