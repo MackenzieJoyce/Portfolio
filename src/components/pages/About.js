@@ -6,7 +6,7 @@ const styles = {
         border: '1px solid steelblue',
         borderRadius: 5,
         boxShadow: '0 0 3px 3px rgba(33, 203, 243, .3)',
-        background: 'grey',
+        background: 'rgba(255, 255, 255, 0.16)',
         minHeight: 500,
         marginTop: '2%',
         paddingTop: '2%',
