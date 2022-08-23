@@ -27,7 +27,15 @@ const App = () => {
           value={selectedTab}
           onChange={handleChange}
           aria-label="icon tabs for navigation"
-          centered
+        centered
+        // Supposed to make the underline lightBlue 
+        // TextIndicatorProps={{sx: { backgroundColor: 'lightBlue', height: 4}}} 
+        
+        sx={{ 
+          "button": { color: '#fff' },
+          "button:hover": {color: 'gray'},
+          "button.Mui-selected": {color: 'lightBlue'}
+        }}
         >
           <Tab icon={<FaUser />} label="ABOUT" />
           <Tab icon={<FaCode />} label="PORTFOLIO" />
