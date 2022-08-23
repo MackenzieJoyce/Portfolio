@@ -3,8 +3,6 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { FaUser, FaCode, FaPhone, FaFileAlt } from 'react-icons/fa';
 
-import './css/navTabs.css';
-
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
