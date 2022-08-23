@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaTwitterSquare, FaDiscord } from 'react-icons/fa';
 
-import EmailForm from './EmailForm';
+import EmailForm from './compPlugins/EmailForm';
 
 const styles = {
   title: {
