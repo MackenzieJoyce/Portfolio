@@ -8,7 +8,8 @@ const styles = {
         boxShadow: '0 0 3px 3px rgba(33, 203, 243, .3)',
         background: 'grey',
         minHeight: 500,
-        margin: '0 30px',
+        marginTop: '2%',
+        paddingTop: '2%',
         width: '80%'
     },
     contentIndiv: { 
