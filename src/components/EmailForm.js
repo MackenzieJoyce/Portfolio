@@ -1,4 +1,3 @@
-import { RemoveShoppingCartRounded } from '@mui/icons-material';
 import React, { useState } from 'react';
 
 const EmailForm = () => {
@@ -24,7 +23,7 @@ const EmailForm = () => {
     });
 
     setStatus('Submit');
-    let result = await RemoveShoppingCartRounded.json();
+    let result = await response.json();
     alert(result.status);
     // setEmail('');
     // setMessage('');
