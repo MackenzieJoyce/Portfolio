@@ -1,5 +1,37 @@
 import React, { useState } from 'react';
 
+const styles = {
+  container: {
+    textAlign: 'center',
+    maxWidth: 500,
+    minHeight: 300,
+    margin: '30px auto',
+    padding: 30,
+    backgroundColor: 'rgba(255, 255, 255, 0.16)',
+    borderRadius: 5,
+    border: '1px solid steelblue',
+    overflow: 'auto'
+  },
+  label: {
+    textAlign: 'left',
+    display: 'block'
+  },
+  input: {
+    width: '98%',
+    height: 30,
+    margin: '5px 0',
+    padding: '3px 7px',
+    fontSize: '17px',
+    borderRadius: 3
+  },
+  form: {
+    marginBottom: 40
+  },
+  control: {
+    margin: '20px 0'
+  }
+};
+
 const EmailForm = () => {
   const [status, setStatus] = useState('Submit');
 
@@ -30,28 +62,51 @@ const EmailForm = () => {
   };
 
   return (
-    <div className="container">
-      <form className="add-form" onSubmit={handleSubmit}>
-        <div className="form-control">
-          <label htmlFor="name">Name </label>
-          <input type="text" id="name" placeholder="Your Name" required />
+    <div className="container" style={styles.container}>
+      <h3>Can't wait? Email me now!</h3>
+      <form onSubmit={handleSubmit}>
+        <div style={styles.control}>
+          <label htmlFor="name" style={styles.label}>
+            Name{' '}
+          </label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            style={styles.input}
+            required
+          />
         </div>
 
-        <div className="form-control">
-          <label htmlFor="email">Email </label>
-          <input type="email" id="email" placeholder="Your Email" required />
+        <div style={styles.control}>
+          <label htmlFor="email" style={styles.label}>
+            Email{' '}
+          </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            style={styles.input}
+            required
+          />
         </div>
 
-        <div className="form-control">
-          <label htmlFor="message">Message </label>
+        <div style={styles.control}>
+          <label htmlFor="message" style={styles.label}>
+            Message{' '}
+          </label>
           <input
             type="textarea"
             id="message"
             placeholder="Your Message"
+            style={styles.input}
             required
           />
         </div>
-        <button type="submit">{status}</button>
+
+        <button className="btn" type="submit">
+          {status}
+        </button>
       </form>
     </div>
   );
