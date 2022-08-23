@@ -5,7 +5,7 @@ const About = () => {
     return ( 
         <div className="content">
             <div>
-                <img></img>
+                {/* <img></img> */}
                 <h1>
                     Mackenzie Joyce
                 </h1>
