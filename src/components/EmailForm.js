@@ -31,7 +31,6 @@ const EmailForm = () => {
 
   return (
     <div className="container">
-      <h1>Get In Touch!</h1>
       <form className="add-form" onSubmit={handleSubmit}>
         <div className="form-control">
           <label htmlFor="name">Name </label>
