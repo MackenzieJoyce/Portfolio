@@ -1,98 +1,98 @@
 // I think id needs to be useId
 import React from 'react';
+import { styled } from '@mui/material/styles';
+import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
+import MuiAccordion from '@mui/material/Accordion';
+import MuiAccordionSummary from '@mui/material/AccordionSummary';
+import MuiAccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
+import CssBaseline from '@mui/material/CssBaseline';
 
 
-const Resume = () => {
+
+const Accordion = styled((props) => (
+  <MuiAccordion disableGutters elevation={0} square {...props} />
+))(({ theme }) => ({
+  border: `1px solid ${theme.palette.divider}`,
+  '&:not(:last-child)': {
+    borderBottom: 0,
+  },
+  '&:before': {
+    display: 'none',
+  },
+}));
+
+const AccordionSummary = styled((props) => (
+  <MuiAccordionSummary
+    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+    {...props}
+  />
+))(({ theme }) => ({
+  backgroundColor:
+    theme.palette.mode === 'dark'
+      ? 'rgba(255, 255, 255, .05)'
+      : 'rgba(0, 0, 0, .03)',
+  flexDirection: 'row-reverse',
+  '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
+    transform: 'rotate(90deg)',
+  },
+  '& .MuiAccordionSummary-content': {
+    marginLeft: theme.spacing(1),
+  },
+}));
+
+const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+  padding: theme.spacing(2),
+  borderTop: '1px solid rgba(0, 0, 0, .125)',
+}));
+
+export default function CustomizedAccordions() {
+  const [expanded, setExpanded] = React.useState('panel1');
+
+  const handleChange = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded ? panel : false);
+  };
+
   return (
     <div>
-      <div className="jumbotron jumbotron-fluid">
-        <div className="container">
-          <h1 className="display-4">Work History</h1>
+      <Container maxWidth="sm">
+      <h1 className="display-4">Work History</h1>
           <p className="lead">
             I have never done anything except web development. 
           </p>
-        </div>
-      </div>
-      <div id="accordion">
-        <div className="card">
-          <div className="card-header" id="headingOne">
-            <h5 className="mb-0">
-              <button
-                className="btn btn-link"
-                data-toggle="collapse"
-                data-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Projects
-              </button>
-            </h5>
-          </div>
+      </Container>
 
-          <div
-            id="collapseOne"
-            className="collapse show"
-            aria-labelledby="headingOne"
-            data-parent="#accordion"
-          >
-            <div className="card-body">
-              Add the projects in a list and put the text in here rather than the portfolio. 
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-header" id="headingTwo">
-            <h5 className="mb-0">
-              <button
-                className="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Work Experience
-              </button>
-            </h5>
-          </div>
-          <div
-            id="collapseTwo"
-            className="collapse"
-            aria-labelledby="headingTwo"
-            data-parent="#accordion"
-          >
-            <div className="card-body">
-              List out actual work expereince without mentioning the years 
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-header" id="headingThree">
-            <h5 className="mb-0">
-              <button
-                className="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Education and Certifications 
-              </button>
-            </h5>
-          </div>
-          <div
-            id="collapseThree"
-            className="collapse"
-            aria-labelledby="headingThree"
-            data-parent="#accordion"
-          >
-            <div className="card-body">
-              Bootcamp certificate and then regular education without mentioning the degree or year 
-            </div>
-          </div>
-        </div>
-      </div>
+      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+          <Typography>Projects</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+          Add the projects in a list and put the text in here rather than the portfolio. 
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+          <Typography>Work Experience</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+          List out actual work expereince without mentioning the years 
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+          <Typography>Education and Certifications</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+          Bootcamp certificate and then regular education without mentioning the degree or year 
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
     </div>
   );
-};
-
-export default Resume;
+}
