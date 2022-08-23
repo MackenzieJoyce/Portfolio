@@ -3,13 +3,16 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { FaUser, FaCode, FaPhone, FaFileAlt } from 'react-icons/fa';
 
+import './css/reset.css';
+import './css/style.css';
+import './css/navTabs.css';
+
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 
 import project from './project';
-
 
 const App = () => {
   // Says which tab is currently clicked
@@ -25,7 +28,8 @@ const App = () => {
       <Tabs
         value={selectedTab}
         onChange={handleChange}
-        aria-label="icon tabs for navigation"
+        aria-label="icon tabs for navigation" 
+        centered
       >
         <Tab icon={<FaUser />} label="ABOUT" />
         <Tab icon={<FaCode />} label="PORTFOLIO" />
@@ -42,4 +46,4 @@ const App = () => {
   );
 };
 
-export default App
+export default App;
