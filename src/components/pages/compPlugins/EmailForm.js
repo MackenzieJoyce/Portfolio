@@ -52,7 +52,8 @@ const EmailForm = () => {
   };
 
   return (
-    <div className="container">
+    <div style={styles.contentIndiv}>
+      {/* className="container"  */}
       <h3 className='title'>Can't wait? Email me now!</h3>
       <form onSubmit={handleSubmit}>
         <div style={styles.control}>

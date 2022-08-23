@@ -18,17 +18,32 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center'
+  },
+  contentEntire: {
+    textAlign: 'center',
+    border: '1px solid steelblue',
+    borderRadius: 5,
+    boxShadow: '0 0 3px 3px rgba(33, 203, 243, .3)',
+    background: 'rgba(255, 255, 255, 0.16)',
+    minHeight: 500,
+    marginTop: '2%',
+    paddingTop: '2%',
+    width: '80%'
+  },
+  contentIndiv: {
+    width: '30%'
   }
 };
 
 const Contact = () => {
   return (
     <>
-      <h3 style={styles.title}>Get In Touch</h3>
+      {/* <h3 style={styles.title}>Get In Touch</h3> */}
 
-      <div className="content">
-        <div className="container">
-          <h3 className="title">Check me out</h3>
+      <div className="content" style={styles.contentEntire}>
+        <div style={styles.contentIndiv}>
+        {/* className="container" */}
+          <h3 className="title">Get In Touch</h3>
           <div style={styles.list}>
             <span style={styles.span}>
               <FaGithub />
