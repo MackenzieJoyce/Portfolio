@@ -20,7 +20,7 @@ const NavTabs = () => {
   };
 
   return (
-      <header>
+      <>
         <Tabs
           value={selectedTab}
           onChange={handleChange}
@@ -46,7 +46,7 @@ const NavTabs = () => {
         {selectedTab === 1 && <Portfolio project={project} />}
         {selectedTab === 2 && <Contact />}
         {selectedTab === 3 && <Resume />}
-      </header>
+      </>
   );
 };
 

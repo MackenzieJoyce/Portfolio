@@ -53,7 +53,7 @@ export default function CustomizedAccordions() {
   };
 
   return (
-    <div>
+    <div className="content">
       <Container maxWidth="sm">
       <h1 className="display-4">Work History</h1>
           <p className="lead">

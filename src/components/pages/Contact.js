@@ -23,7 +23,7 @@ const styles = {
 
 const Contact = () => {
   return (
-    <div>
+    <div className="content">
       <h3 style={styles.title}>Get In Touch</h3>
       <div className="container">
         <h3 className='title'>Check me out</h3>
