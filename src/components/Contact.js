@@ -4,6 +4,11 @@ import { FaGithub, FaTwitterSquare, FaDiscord } from 'react-icons/fa';
 
 const Contact = () => {
   return (
+
+
+
+
+    
     <div className="card">
       <div className="card-body">
         <h5 className="card-title">Get in touch!</h5>
