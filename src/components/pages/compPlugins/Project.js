@@ -1,7 +1,4 @@
-// Take from  https://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/
-
 import React from 'react';
-// import PropTypes from 'prop-types';
 
 const Project = ({ project }) => {
   return (
@@ -13,11 +10,5 @@ const Project = ({ project }) => {
     </div>
   );
 };
-
-// Project.propTypes = {
-//   title: PropTypes.string.isRequired,
-//   text: PropTypes.string.isRequired,
-//   tech: PropTypes.string.isRequired
-// };
 
 export default Project;

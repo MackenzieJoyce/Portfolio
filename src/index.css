@@ -84,26 +84,12 @@ img {
   justify-content: space-around;
   width: 100%;
 }
-/* 
-.container {
-  max-width: 500px;
-  min-height: 300px;
-  margin: 2% auto;
-  padding: 2%;
-  background-color: rgba(255, 255, 255, 0.16);
-  border-radius: 5px;
-  border: 1px solid steelblue;
-  box-shadow: 0 0 3px 3px rgba(33, 203, 243, .3);
-  text-align: center;
-  overflow: auto;
-} */
 
 .contentEntire {
   text-align: center;
   border: 1px solid steelblue;
   border-radius: 5px;
   box-shadow: var(--boxShadow);
-  /* rgba(33, 203, 243, .3) */
   background: var(--middle);
   min-height: 500px;
   margin-top: 2%;
@@ -122,17 +108,11 @@ img {
   border-bottom: 2px solid var(--pop1);
 }
 
-#panel1d-header,
-#panel2d-header,
-#panel3d-header { 
-  background: var(--linearGradient);
-}
-
 .projectCard { 
   width: 225px;
   height: 225px;
   margin: 1.5% 1.5% 0 0 ;
-  padding: 1.8%;
+  /* padding: 1.8%; */
   border: 2px solid lightBlue;
   box-shadow: var(--boxShadow);
   border-radius: 5px;
