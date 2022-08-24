@@ -133,3 +133,11 @@ img {
   flex: 0 0 25%;
   flex-direction: column;
 }
+
+.carousel.carousel-slider { 
+  height: 100%;
+}
+
+.carousel.carousel-slider button.control-arrow:hover{ 
+  background: rgb(255, 142, 83, 0.3);
+}

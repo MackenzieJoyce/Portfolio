@@ -16,11 +16,7 @@ const styles = {
 const Portfolio = ({ projects }) => {
   return (
     <div className="contentEntire" style={styles.projectContainer}>
-      <Carousel>
-        {/* showArrows={true}
-      onChange={onChange}
-      onClickItem={onClickItem}
-      onClickThumb={onClickThumb} */}
+      <Carousel style={styles.arrow}>
         {/* Bringing in the Project component as a prop */}
         {projects.map((project) => (
           <Project key={project.id} project={project} />
