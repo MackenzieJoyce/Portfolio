@@ -2,11 +2,14 @@ import React from 'react';
 
 import Project from './compPlugins/Project';
 
-const Portfolio = ({ project }) => {
+
+const Portfolio = ({ projects }) => {
   return (
     <div className="content">
       {/* Bringing in the Project component as a prop */}
-      <Project key={project.id} project={project} />
+      {projects.map((projects) => (
+        <Project key={projects.id} project={projects} />
+      ))}
     </div>
   );
 };

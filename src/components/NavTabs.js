@@ -9,7 +9,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
-import project from '../project';
+import projects from '../projects';
 
 const styles = {
   nav: {
@@ -51,7 +51,7 @@ const App = () => {
       {/* Says: When the tab selected is at # it will show the specific page info */}
       {/* This is sorta like a turnary but not */}
       {selectedTab === 0 && <About />}
-      {selectedTab === 1 && <Portfolio project={project} />}
+      {selectedTab === 1 && <Portfolio projects={projects} />}
       {selectedTab === 2 && <Contact />}
       {selectedTab === 3 && <Resume />}
     </header>
