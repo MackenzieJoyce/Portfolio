@@ -2,8 +2,9 @@ import React from 'react';
 
 import Project from './compPlugins/Project';
 
+
 const styles = {
-  projects: {
+  projectContainer: {
     display: 'flex',
     justifyContent: 'center',
     flexWrap: 'wrap'
@@ -12,10 +13,10 @@ const styles = {
 
 const Portfolio = ({ projects }) => {
   return (
-    <div className="content" style={styles.projects}>
+    <div className="content" style={styles.projectContainer}>
       {/* Bringing in the Project component as a prop */}
-      {projects.map((projects) => (
-        <Project key={projects.id} project={projects} />
+      {projects.map((project) => (
+        <Project key={project.id} project={project} />
       ))}
     </div>
   );
