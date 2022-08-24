@@ -1,20 +1,31 @@
 import React from 'react';
 
+// import profile from '../../img/businessProfile'
 // import NavTabs from '../NavTabs';
+
+const styles = {
+  profile: {
+    width: 320,
+    borderRadius: 200,
+    margin: '1%'
+  }
+};
 
 const About = () => {
   return (
     <div className="content contentEntire">
       {/* <NavTabs /> */}
       <div className="contentIndiv">
-        <img
-          className="title"
-          src="../../../Assets/Business Profile.jpeg"
-          alt="Mackenzie Joyce"
-        />
+        <div className="title">
+          <img
+            style={styles.profile}
+            src={require('../../img/businessProfile.jpeg')}
+            alt="Mackenzie Joyce"
+          />
+        </div>
         <h1>Mackenzie Joyce</h1>
       </div>
-      <div className="contentIndiv">
+      <div className="contentIndiv" border-right="1px solid gray">
         <h2 className="title">Front-End Web Developer</h2>
         <p>
           I am a recent graduate of a full-stack coding bootcamp. My strong suit
