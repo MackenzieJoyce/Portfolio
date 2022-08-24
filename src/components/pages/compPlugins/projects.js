@@ -1,7 +1,7 @@
 const projects = [
   {
     id: 1,
-    img: '../../img/Backyard Jungle.png',
+    img: '../../img/backyardJungle.png',
     title: 'Backyard Jungle',
     text: 'An online forum for Gardeners',
     tech: 'Handlebars/Bootstrap/Express/RESTful API'
