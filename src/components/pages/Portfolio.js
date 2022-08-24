@@ -1,10 +1,12 @@
 import React from 'react';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 
 import Project from './compPlugins/Project';
 
-
 const styles = {
   projectContainer: {
+    padding: 0,
     display: 'flex',
     justifyContent: 'center',
     flexWrap: 'wrap'
@@ -13,11 +15,17 @@ const styles = {
 
 const Portfolio = ({ projects }) => {
   return (
-    <div className="content" style={styles.projectContainer}>
-      {/* Bringing in the Project component as a prop */}
-      {projects.map((project) => (
-        <Project key={project.id} project={project} />
-      ))}
+    <div className="contentEntire" style={styles.projectContainer}>
+      <Carousel>
+        {/* showArrows={true}
+      onChange={onChange}
+      onClickItem={onClickItem}
+      onClickThumb={onClickThumb} */}
+        {/* Bringing in the Project component as a prop */}
+        {projects.map((project) => (
+          <Project key={project.id} project={project} />
+        ))}
+      </Carousel>
     </div>
   );
 };
