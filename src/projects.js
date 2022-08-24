@@ -31,7 +31,7 @@ const projects = [
     id: 5,
     img: '../Assets/tech-blog.png',
     title: 'Tech Blog',
-    text: 'Make a name for yourself, share your thoughts, interact with others',
+    text: 'Make an account, share thoughts, interact with others',
     tech: 'Express'
   },
   {
