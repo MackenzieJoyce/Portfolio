@@ -39,7 +39,8 @@ const App = () => {
         sx={{
           button: { color: '#fff' },
           'button:hover': { color: 'gray' },
-          'button.Mui-selected': { color: 'lightBlue' }
+          'button.Mui-selected': { color: '#FF8E53' },
+          '.css-1aquho2-MuiTabs-indicator': { background: '#FE6B8B' }
         }}
       >
         <Tab icon={<FaUser />} label="ABOUT" />
