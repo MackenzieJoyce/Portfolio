@@ -7,7 +7,6 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     flexWrap: 'wrap',
-    flex: '0 0 33.333333%'
   }
 }
 

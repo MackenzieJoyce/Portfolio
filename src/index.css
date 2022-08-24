@@ -139,11 +139,15 @@ img {
 }
 
 .projectCard { 
-  width: 300px;
-  height: 300px;
-  margin: 20px;
-  padding: 10px;
+  width: 225px;
+  height: 225px;
+  margin: 1.5% 1.5% 0 0 ;
+  padding: 20px;
   border: 2px solid lightBlue;
   box-shadow: 0 0 3px 3px #f7af88;
   border-radius: 5px;
+  display: flex;
+  flex: 0 0 25%;
+  flex-direction: column;
+  justify-content: flex-end;
 }
