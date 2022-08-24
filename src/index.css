@@ -1,21 +1,11 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
-
 :root { 
   --dark: #1d1d1d;
+  --middle: rgba(255, 255, 255, 0.16);
+  --pop1: #FE6B8B;
+  --pop2: #FF8E53;
   --light: #fff;
+  --linearGradient: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+  --boxShadow: 0 0 5px 3px #f7af88;
 }
 
 body {
@@ -57,18 +47,18 @@ p + p {
 }
 
 .standout { 
-  color: #FF8E53;
+  color: var(--pop2);
 }
 
 a { 
-  padding: 7px 20px;
+  padding: 2.5% 8%;
   color: var(--light);
   text-decoration: none;
 }
 
 .btn {
-  padding: 15px 30px;
-  background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+  padding: 4.5% 9%;
+  background: var(--linearGradient);
   color: var(--dark);
   font-size: 1.3rem;
   font-weight: 700;
@@ -81,7 +71,7 @@ a {
 }
 
 .btn:hover { 
-  box-shadow: 0 0 3px 3px #f7af88;
+  box-shadow: var(--boxShadow);
 }
 
 img { 
@@ -112,9 +102,9 @@ img {
   text-align: center;
   border: 1px solid steelblue;
   border-radius: 5px;
-  box-shadow: 0 0 3px 3px #FF8E53;
+  box-shadow: var(--boxShadow);
   /* rgba(33, 203, 243, .3) */
-  background: rgba(255, 255, 255, 0.16);
+  background: var(--middle);
   min-height: 500px;
   margin-top: 2%;
   padding-top: 2%;
@@ -127,27 +117,26 @@ img {
 
 .title {
   text-align: center;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #FE6B8B;
+  margin-bottom: 9%;
+  padding-bottom: 3%;
+  border-bottom: 2px solid var(--pop1);
 }
 
 #panel1d-header,
 #panel2d-header,
 #panel3d-header { 
-  background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+  background: var(--linearGradient);
 }
 
 .projectCard { 
   width: 225px;
   height: 225px;
   margin: 1.5% 1.5% 0 0 ;
-  padding: 20px;
+  padding: 1.8%;
   border: 2px solid lightBlue;
-  box-shadow: 0 0 3px 3px #f7af88;
+  box-shadow: var(--boxShadow);
   border-radius: 5px;
   display: flex;
   flex: 0 0 25%;
   flex-direction: column;
-  justify-content: flex-end;
 }
