@@ -2,13 +2,13 @@ import React from 'react';
 
 import Project from './compPlugins/Project';
 
-const styles = { 
-  projects: { 
+const styles = {
+  projects: {
     display: 'flex',
     justifyContent: 'center',
-    flexWrap: 'wrap',
+    flexWrap: 'wrap'
   }
-}
+};
 
 const Portfolio = ({ projects }) => {
   return (
