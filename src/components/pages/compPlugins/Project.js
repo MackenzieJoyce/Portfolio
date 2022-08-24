@@ -6,12 +6,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// const styles = {
+//   card: {
+//     maxWidth: 300,
+//     margin: 5,
+//     border: '2px solid lightBlue',
+//     borderRadius: 5
+//   }
+// };
+  
 const Project = ({ project }) => {
   return (
-    <div className="view view-first">
-      <h3>{project.title}</h3>
-      <p>{project.text}</p>
-      <span>{project.tech}</span>
+    <div className="projectCard">
+      {/* style={styles.card} */}
+      <h3 className="title">{project.title}</h3>
+      <p className="">{project.text}</p>
+      <span className="standout">{project.tech}</span>
     </div>
   );
 };
