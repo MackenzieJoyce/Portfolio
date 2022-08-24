@@ -10,7 +10,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
-import projects from '../projects';
+import projects from './pages/compPlugins/projects';
 
 const styles = {
   nav: {
