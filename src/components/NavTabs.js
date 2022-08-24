@@ -1,6 +1,6 @@
 import React from 'react';
 // import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { FaUser, FaCode, FaPhone, FaFileAlt } from 'react-icons/fa';
@@ -18,7 +18,7 @@ const styles = {
   }
 };
 
-const App = () => {
+const NavTabs = () => {
   // ^props
   // const { match, history } = props;
   // const { params } = match;
@@ -40,7 +40,7 @@ const App = () => {
 
   // Says which tab is currently clicked
   const [selectedTab, setSelectedTab] = React.useState(0);
-  // (indexToTabName[page]);
+    // (indexToTabName[page]);
 
   // Fxn triggered whenever you click another tab
   const handleChange = (event, newValue) => {
@@ -56,8 +56,6 @@ const App = () => {
         aria-label="icon tabs for navigation"
         style={styles.nav}
         centered
-        // Supposed to make the underline lightBlue
-        // TextIndicatorProps={{sx: { backgroundColor: 'lightBlue', height: 4}}}
         sx={{
           button: { color: '#fff' },
           'button:hover': { color: 'gray' },
@@ -65,18 +63,18 @@ const App = () => {
           '.css-1aquho2-MuiTabs-indicator': { background: '#FE6B8B' }
         }}
       >
-        <Link to='/'>
+        {/* <Link to='/'> */}
           <Tab icon={<FaUser />} label='ABOUT' />
-        </Link>
-        <Link to='/portfolio'>
+        {/* </Link> */}
+        {/* <Link to='/portfolio'> */}
           <Tab icon={<FaCode />} label='PORTFOLIO' />
-        </Link>
-        <Link to='/contact'>
+        {/* </Link> */}
+        {/* <Link to='/contact'> */}
           <Tab icon={<FaPhone />} label='CONTACT' />
-        </Link>
-        <Link to='/resume'>
+        {/* </Link> */}
+        {/* <Link to='/resume'> */}
           <Tab icon={<FaFileAlt />} label='RESUME' />
-        </Link>
+        {/* </Link> */}
       </Tabs>
       {/* Says: When the tab selected is at # it will show the specific page info */}
       {/* This is sorta like a turnary but not */}
@@ -88,4 +86,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default NavTabs;
