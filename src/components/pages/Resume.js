@@ -21,10 +21,10 @@ const styles = {
 
 const Resume = () => {
     const onDownload = () => {
-      const link = document.createElement("a");
-      link.download = `download.txt`;
-      link.href = "./download.txt";
-      link.click();
+      const press = document.createElement("a");
+      press.download = `Resume_Mackenzie_Joyce.pdf`;
+      press.href = "../../public/Resume_Mackenzie_Joyce.pdf";
+      press.click();
     };
 
   return (
