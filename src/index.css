@@ -138,6 +138,11 @@ img {
   height: 100%;
 }
 
+/* Leave these next two as rgb because of opacity value */
+.carousel.carousel-slider button.control-arrow  { 
+  background: rgb(254, 107, 139, 0.7);
+}
+
 .carousel.carousel-slider button.control-arrow:hover{ 
-  background: rgb(255, 142, 83, 0.3);
+  background: rgb(255, 142, 83, 0.7);
 }

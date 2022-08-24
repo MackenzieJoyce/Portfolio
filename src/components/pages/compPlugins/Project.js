@@ -1,10 +1,16 @@
 import React from 'react';
 
+const styles = { 
+  aTag: { 
+    padding: 0
+  }
+}
+
 const Project = ({ project }) => {
   return (
     <>
-      <a href={project.link}>
-        <img src={project.img} alt={project.title} height='400px' />
+      <a href={project.link} style={styles.aTag}>
+        <img src={project.img} alt={project.title} width='300px' />
         <h3>{project.title}</h3>
       </a>
     </>
