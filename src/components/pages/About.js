@@ -7,7 +7,9 @@ const styles = {
   profile: {
     width: 320,
     borderRadius: 200,
-    margin: '1%'
+    margin: '1%',
+    border: '2.5px solid #f7af88', 
+    boxShadow: '0 0 5px 3px #FE6B8B'
   }
 };
 
