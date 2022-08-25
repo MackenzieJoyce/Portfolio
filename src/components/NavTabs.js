@@ -7,7 +7,7 @@ import { FaUser, FaCode, FaPhone, FaFileAlt } from 'react-icons/fa';
 
 const styles = {
   nav: {
-    marginBottom: 30
+    marginBottom: 20
   }
 };
 
