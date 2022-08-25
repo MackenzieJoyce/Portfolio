@@ -12,9 +12,8 @@ import projects from './components/pages/compPlugins/projects';
 
 const App = () => {
   return (
-    <div className='wrapAll'>
+    <div className="wrapAll">
       {/* <PortfolioContainer /> */}
-      {/* <NavTabs /> */}
       <Router>
         <NavTabs />
 
