@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Tabs from '@mui/material/Tabs';
@@ -20,27 +20,29 @@ const styles = {
 
 const NavTabs = () => {
   // Says which tab is currently clicked
-  // const [selectedTab, setSelectedTab] = useState(0);
+  const [selectedTab, setSelectedTab] = useState(0);
 
-  // // Fxn triggered whenever you click another tab
+  // Fxn triggered whenever you click another tab
 
-  // const handleChange = (event, newValue) => {
-  //   setSelectedTab(newValue);
-  // };
+  const handleChange = (event, newValue) => {
+    setSelectedTab(newValue);
+  };
 
   return (
     <header>
       <Tabs
+        onClick={selectedTab}
+        onChange={handleChange}
         style={styles.nav}
         sx={{
           button: { color: '#fff' },
           'button:hover': { color: 'gray' },
-          'button.Mui-selected': { color: '#FF8E53' },
+          // 'button.Mui-selected': { color: '#FF8E53' },
+          'button:focus': { color: '#FF8E53', borderBottom: '3px solid #FE6B8B'},
           '.css-1aquho2-MuiTabs-indicator': { background: '#FE6B8B' },
-          'div.MuiTabs-scroller.MuiTabs-fixed.css-jpln7h-MuiTabs-scroller':
-            {
-              width: '530px'
-            }
+          'div.MuiTabs-scroller.MuiTabs-fixed.css-jpln7h-MuiTabs-scroller': {
+            width: '530px'
+          }
         }}
       >
         <Link to="/">
