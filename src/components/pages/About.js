@@ -8,7 +8,7 @@ const styles = {
     width: 320,
     borderRadius: 200,
     margin: '1%',
-    border: '2px solid #f7af88', 
+    // border: '2px solid #f7af88', 
     boxShadow: '0 0 5px 3px #ffdf5d'
   }
 };

@@ -5,7 +5,7 @@
   --pop2: #FF8E53;
   --light: #fff;
   --linearGradient: linear-gradient(45deg, #ffdf5d 30%, #FF8E53 90%);
-  --boxShadow: 0 0 5px 3px #f7af88;
+  --boxShadow: 0 0 10px 1px #f7af88;
 }
 
 body {
@@ -109,7 +109,7 @@ img {
   padding-top: 2%;
   background: var(--middle);
   text-align: center;
-  border: 1px solid var(--pop1);
+  border: 1px solid slategrey;
   border-radius: 5px;
   box-shadow: var(--boxShadow);
 } 
@@ -120,7 +120,7 @@ img {
   padding-top: 2%;
   background: var(--middle);
   text-align: center;
-  border: 1px solid var(--pop1);
+  border: 1px solid slategrey;
   border-radius: 5px;
   box-shadow: var(--boxShadow);
 }
