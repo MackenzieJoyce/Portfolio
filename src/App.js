@@ -1,24 +1,35 @@
 import React from 'react';
 // import PortfolioContainer from './components/PortfolioContainer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import NavTabs from './components/NavTabs';
+import About from './components/pages/About';
+import Portfolio from './components/pages/Portfolio';
+import Contact from './components/pages/Contact';
+import Resume from './components/pages/Resume';
+
+import projects from './components/pages/compPlugins/projects';
 
 const App = () => {
   return (
     <div>
       {/* <PortfolioContainer /> */}
-      <NavTabs />
-    </div>
+      {/* <NavTabs /> */}
+      <Router>
+        <NavTabs />
 
-    // <Router>
-    //   <NavTabs />
-    //   <Routes>
-    //     {/* <Route path='/' element={<PortfolioContainer />} /> */}
-    //     <Route path='/' element={<About />} />
-    //     <Route path='/portfolio' element={<Portfolio projects={projects} />} />
-    //     <Route path='/contact' element={<Contact EmailForm={EmailForm} />} />
-    //     <Route path='/resume' element={<Resume />} />
-    //   </Routes>
-    // </Router>
+        <Routes>
+          {/* <Route path='/' element={<PortfolioContainer />} /> */}
+          <Route path="/" element={<About />} />
+          <Route
+            path="/portfolio"
+            element={<Portfolio projects={projects} />}
+          />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 
