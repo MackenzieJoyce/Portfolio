@@ -6,6 +6,7 @@ import NavTabs from './components/NavTabs';
 import About from './components/pages/About';
 import Portfolio from './components/pages/Portfolio';
 import Contact from './components/pages/Contact';
+import EmailForm from './components/pages/compPlugins/EmailForm';
 import Resume from './components/pages/Resume';
 
 import projects from './components/pages/compPlugins/projects';
@@ -22,9 +23,9 @@ const App = () => {
           <Route path="/" element={<About />} />
           <Route
             path="/portfolio"
-            element={<Portfolio projects={projects} />}
-          />
+            element={<Portfolio projects={projects} />}/>
           <Route path="/contact" element={<Contact />} />
+          <Route path="/contact/email" element={<EmailForm />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
       </Router>

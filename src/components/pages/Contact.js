@@ -6,6 +6,7 @@ import {
   FaLinkedin
 } from 'react-icons/fa';
 
+import { Link } from 'react-router-dom';
 // import EmailForm from './compPlugins/EmailForm';
 
 const styles = {
@@ -15,7 +16,6 @@ const styles = {
     flexDirection: 'column'
   },
   span: {
-    // textAlign: 'center',
     margin: 10,
     display: 'flex',
     flexDirection: 'column',
@@ -37,11 +37,13 @@ const Contact = () => {
           <h3 className="title">Get In Touch</h3>
           <div style={styles.list}>
             <div>
-              <span>Send an Email</span>
+              <Link to="/contact/email">
+                Email Me!
+              </Link>
             </div>
             <ul>
               <li style={styles.li}>
-                <div className='glowOnHover'>
+                <div className="glowOnHover">
                   <a
                     href="https://github.com/MackenzieJoyce"
                     target="_blank"
@@ -58,7 +60,7 @@ const Contact = () => {
               </li>
 
               <li style={styles.li}>
-                <div className='glowOnHover'>
+                <div className="glowOnHover">
                   <a
                     href="https://www.linkedin.com/in/mackenziejoyce/"
                     target="_blank"
@@ -75,7 +77,7 @@ const Contact = () => {
               </li>
 
               <li style={styles.li}>
-                <div className='glowOnHover'>
+                <div className="glowOnHover">
                   <a
                     href="https://twitter.com/FreshCodeFish"
                     target="_blank"
@@ -100,7 +102,6 @@ const Contact = () => {
             </ul>
           </div>
         </div>
-        {/* <EmailForm /> */}
       </div>
     </>
   );
