@@ -8,8 +8,8 @@ const styles = {
     width: 320,
     borderRadius: 200,
     margin: '1%',
-    border: '2.5px solid #f7af88', 
-    boxShadow: '0 0 5px 3px #FE6B8B'
+    border: '2px solid #f7af88', 
+    boxShadow: '0 0 5px 3px #ffdf5d'
   }
 };
 
@@ -21,7 +21,7 @@ const About = () => {
         <div className="title">
           <img
             style={styles.profile}
-            src='../../img/businessProfile.jpeg'
+            src={require('../../img/businessProfile.jpeg')}
             alt="Mackenzie Joyce"
           />
         </div>
