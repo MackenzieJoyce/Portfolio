@@ -6,7 +6,7 @@ const styles = {
     display: 'block'
   },
   input: {
-    width: '98%',
+    width: '94%',
     height: 30,
     margin: '5px 0',
     padding: '3px 7px',
@@ -16,8 +16,8 @@ const styles = {
   form: {
     marginBottom: 40
   },
-  control: {
-    margin: '20px 0'
+  titleAndInput: {
+    margin: '20px 0', 
   }
 };
 
@@ -56,7 +56,7 @@ const EmailForm = () => {
       {/* className="container"  */}
       <h3 className='title'>Can't wait? Email me now!</h3>
       <form onSubmit={handleSubmit}>
-        <div style={styles.control}>
+        <div style={styles.titleAndInput}>
           <label htmlFor="name" style={styles.label}>
             Name{' '}
           </label>
@@ -69,7 +69,7 @@ const EmailForm = () => {
           />
         </div>
 
-        <div style={styles.control}>
+        <div style={styles.titleAndInput}>
           <label htmlFor="email" style={styles.label}>
             Email{' '}
           </label>
@@ -82,7 +82,7 @@ const EmailForm = () => {
           />
         </div>
 
-        <div style={styles.control}>
+        <div style={styles.titleAndInput}>
           <label htmlFor="message" style={styles.label}>
             Message{' '}
           </label>

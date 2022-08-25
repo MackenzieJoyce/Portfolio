@@ -88,6 +88,10 @@ a {
   box-shadow: var(--boxShadow);
 }
 
+.glowOnHover:hover { 
+  color: var(--pop2);
+}
+
 img { 
   object-fit: contain;
 }
