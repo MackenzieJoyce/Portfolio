@@ -12,7 +12,7 @@ import projects from './components/pages/compPlugins/projects';
 
 const App = () => {
   return (
-    <div>
+    <div className='wrapAll'>
       {/* <PortfolioContainer /> */}
       {/* <NavTabs /> */}
       <Router>
