@@ -10,7 +10,7 @@ const styles = {
   },
   leftAndRight: {
     width: '100%',
-    marginBottom: '15%',
+    marginBottom: '13%',
     display: 'flex',
     justifyContent: 'space-around',
   }

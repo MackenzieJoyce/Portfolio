@@ -112,7 +112,7 @@ img {
 
 .contentLittle { 
   width: 30%;
-  min-height: 500px;
+  min-height: 480px;
   padding-top: 2%;
   background: var(--middle);
   text-align: center;
