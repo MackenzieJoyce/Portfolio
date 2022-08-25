@@ -6,11 +6,11 @@ const styles = {
     margin: '0 15%'
   },
   subTitle: {
-    margin: '5% 0 5% 0'
+    margin: '8% 0 6% 0'
   },
   leftAndRight: {
     width: '100%',
-    marginBottom: '10%',
+    marginBottom: '15%',
     display: 'flex',
     justifyContent: 'space-around',
   }
