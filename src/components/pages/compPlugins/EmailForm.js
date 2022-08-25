@@ -52,7 +52,8 @@ const EmailForm = () => {
   };
 
   return (
-    <div className='contentLittle'>
+    <div className='content contentLittle'>
+      <div>
       <h3 className='title'>Can't wait? Email me now!</h3>
       <form onSubmit={handleSubmit}>
         <div style={styles.titleAndInput}>
@@ -97,7 +98,8 @@ const EmailForm = () => {
         <button className="btn" type="submit">
           {status}
         </button>
-      </form>
+        </form>
+        </div>
     </div>
   );
 };
