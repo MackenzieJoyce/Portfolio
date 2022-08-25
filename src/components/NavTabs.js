@@ -46,14 +46,14 @@ const NavTabs = () => {
         <Link to="/">
           <Tab icon={<FaUser />} label="ABOUT" />
         </Link>
+        <Link to="/portfolio">
+          <Tab icon={<FaCode />} label="PORTFOLIO" />
+        </Link>
         <Link to="/contact">
           <Tab icon={<FaPhone />} label="CONTACT" />
         </Link>
         <Link to="/resume">
           <Tab icon={<FaFileAlt />} label="RESUME" />
-        </Link>
-        <Link to="/portfolio">
-          <Tab icon={<FaCode />} label="PORTFOLIO" />
         </Link>
       </Tabs>
       {/* {selectedTab === 0 && <About />}
