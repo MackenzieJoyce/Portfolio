@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const styles = {
   label: {
@@ -38,8 +39,8 @@ const EmailForm = () => {
     let response = await fetch('http://localhost:5000/contact', {
       method: 'POST',
       headers: {
-        // 'Content-Type': 'http://localhost:5000/contact'
-        "Content-Type": "application/json;charset=utf-8",
+        'Content-Type': 'http://localhost:5000/contact'
+        // "Content-Type": "application/json;charset=utf-8",
       },
       body: JSON.stringify(details)
     });
@@ -47,8 +48,7 @@ const EmailForm = () => {
     setStatus('Submit');
     let result = await response.json();
     alert(result.status);
-    // setEmail('');
-    // setMessage('');
+
   };
 
   return (
@@ -98,6 +98,7 @@ const EmailForm = () => {
         <button className="btn" type="submit">
           {status}
         </button>
+          <Link to='/contact'>Go Back</Link>
         </form>
         </div>
     </div>
