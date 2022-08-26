@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const styles = {
   title: { 
-    margin: '0 10%'
+    margin: '0 10% 10% 10%'
   },
   list: {
     fontSize: '1.3rem',
@@ -50,7 +50,7 @@ const Contact = () => {
     <>
       <div className="content contentLittle">
         <div>
-          <h3 className="title">Get In Touch</h3>
+          <h3 className="title" style={styles.title}>Get In Touch</h3>
           <div style={styles.list}>
             <div>
               <Link to="/Portfolio/contact/email">Email Me!</Link>
@@ -59,7 +59,7 @@ const Contact = () => {
 
               <div style={styles.sides}>
                 <li>
-                  <div className="glowOnHover">
+                  <div>
                     <a
                       href="https://github.com/MackenzieJoyce"
                       target="_blank"
@@ -76,7 +76,7 @@ const Contact = () => {
                 </li>
 
                 <li>
-                  <div className="glowOnHover">
+                  <div>
                     <a
                       href="https://www.linkedin.com/in/mackenziejoyce/"
                       target="_blank"
@@ -95,7 +95,7 @@ const Contact = () => {
 
               <div style={styles.sides}>
                 <li>
-                  <div className="glowOnHover">
+                  <div>
                     <a
                       href="https://twitter.com/FreshCodeFish"
                       target="_blank"
