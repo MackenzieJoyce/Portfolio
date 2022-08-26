@@ -37,7 +37,7 @@ const Contact = () => {
           <h3 className="title">Get In Touch</h3>
           <div style={styles.list}>
             <div>
-              <Link to="/contact/email">
+              <Link to="/Portfolio/contact/email">
                 Email Me!
               </Link>
             </div>

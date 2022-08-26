@@ -22,7 +22,7 @@ const App = () => {
           {/* <Route path='/' element={<PortfolioContainer />} /> */}
           <Route path="/Portfolio/" element={<About />} />
           <Route
-            path="/Portfolio/portfolio"
+            path="/Portfolio/project"
             element={<Portfolio projects={projects} />}/>
           <Route path="/Portfolio/contact" element={<Contact />} />
           <Route path="/Portfolio/contact/email" element={<EmailForm />} />

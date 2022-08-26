@@ -45,16 +45,16 @@ const NavTabs = () => {
           }
         }}
       >
-        <Link to="/">
+        <Link to="/Portfolio/">
           <Tab icon={<FaUser />} label="ABOUT" />
         </Link>
-        <Link to="/portfolio">
+        <Link to="/Portfolio/project">
           <Tab icon={<FaCode />} label="PORTFOLIO" />
         </Link>
-        <Link to="/contact">
+        <Link to="/Portfolio/contact">
           <Tab icon={<FaPhone />} label="CONTACT" />
         </Link>
-        <Link to="/resume">
+        <Link to="/Portfolio/resume">
           <Tab icon={<FaFileAlt />} label="RESUME" />
         </Link>
       </Tabs>
