@@ -6,6 +6,7 @@ import Project from './compPlugins/Project';
 
 const styles = {
   projectContainer: {
+    width: 'fit-content',
     padding: 0,
     display: 'flex',
     justifyContent: 'center',

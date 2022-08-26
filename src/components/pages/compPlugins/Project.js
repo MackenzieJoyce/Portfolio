@@ -10,7 +10,7 @@ const Project = ({ project }) => {
   return (
     <>
       <a href={project.link} style={styles.aTag}>
-        <img src={project.img} alt={project.title} height='460px' />
+        <img src={project.img} alt={project.title} height='440px' />
         <h3>{project.title}</h3>
       </a>
     </>
