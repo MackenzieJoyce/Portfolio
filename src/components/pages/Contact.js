@@ -7,25 +7,41 @@ import {
 } from 'react-icons/fa';
 
 import { Link } from 'react-router-dom';
-// import EmailForm from './compPlugins/EmailForm';
 
 const styles = {
+  title: { 
+    margin: '0 10%'
+  },
   list: {
     fontSize: '1.3rem',
     display: 'flex',
     flexDirection: 'column'
   },
   span: {
-    margin: 10,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center'
   },
-  li: {
-    margin: '10%'
-  },
   a: {
     padding: 0
+  },
+  icons: {
+    // background: 'linear-gradient(45deg, #ffdf5d 30%, #FF8E53 90%)',
+    fontSize: '2rem',
+    marginBottom: '5%',
+  },
+  leftAndRight: {
+    width: '100%',
+    // marginBottom: '13%',
+    display: 'flex',
+    justifyContent: 'space-around',
+  }, 
+  sides: { 
+    minWidth: 200,
+    padding: '5%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start'
   }
 };
 
@@ -37,68 +53,72 @@ const Contact = () => {
           <h3 className="title">Get In Touch</h3>
           <div style={styles.list}>
             <div>
-              <Link to="/Portfolio/contact/email">
-                Email Me!
-              </Link>
+              <Link to="/Portfolio/contact/email">Email Me!</Link>
             </div>
-            <ul>
-              <li style={styles.li}>
-                <div className="glowOnHover">
-                  <a
-                    href="https://github.com/MackenzieJoyce"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Github: MackenzieJoyce"
-                    style={styles.a}
-                  >
-                    <span style={styles.span}>
-                      <FaGithub />
-                      GitHub - MackenzieJoyce
-                    </span>
-                  </a>
-                </div>
-              </li>
+            <ul  style={styles.leftAndRight}>
 
-              <li style={styles.li}>
-                <div className="glowOnHover">
-                  <a
-                    href="https://www.linkedin.com/in/mackenziejoyce/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Github: MackenzieJoyce"
-                    style={styles.a}
-                  >
-                    <span style={styles.span}>
-                      <FaLinkedin />
-                      LinkedIn - MackenzieJoyce
-                    </span>
-                  </a>
-                </div>
-              </li>
+              <div style={styles.sides}>
+                <li>
+                  <div className="glowOnHover">
+                    <a
+                      href="https://github.com/MackenzieJoyce"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Github: MackenzieJoyce"
+                      style={styles.a}
+                    >
+                      <span style={styles.span}>
+                        <FaGithub style={styles.icons} />
+                        GitHub - MackenzieJoyce
+                      </span>
+                    </a>
+                  </div>
+                </li>
 
-              <li style={styles.li}>
-                <div className="glowOnHover">
-                  <a
-                    href="https://twitter.com/FreshCodeFish"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Twitter: FreshCodeFish"
-                    style={styles.a}
-                  >
-                    <span style={styles.span}>
-                      <FaTwitterSquare />
-                      Twitter - FreshCodeFish
-                    </span>
-                  </a>
-                </div>
-              </li>
+                <li>
+                  <div className="glowOnHover">
+                    <a
+                      href="https://www.linkedin.com/in/mackenziejoyce/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Github: MackenzieJoyce"
+                      style={styles.a}
+                    >
+                      <span style={styles.span}>
+                        <FaLinkedin style={styles.icons} />
+                        LinkedIn - MackenzieJoyce
+                      </span>
+                    </a>
+                  </div>
+                </li>
+              </div>
 
-              <li style={styles.li}>
-                <span style={styles.span}>
-                  <FaDiscord />
-                  Discord - MackenzieJoyce#5843
-                </span>
-              </li>
+              <div style={styles.sides}>
+                <li>
+                  <div className="glowOnHover">
+                    <a
+                      href="https://twitter.com/FreshCodeFish"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Twitter: FreshCodeFish"
+                      style={styles.a}
+                    >
+                      <span style={styles.span}>
+                        <FaTwitterSquare style={styles.icons} />
+                        Twitter - FreshCodeFish
+                      </span>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <span style={styles.span}>
+                    <FaDiscord style={styles.icons} />
+                    Discord - MackenzieJoyce#5843
+                  </span>
+                </li>
+              </div>
+
             </ul>
           </div>
         </div>

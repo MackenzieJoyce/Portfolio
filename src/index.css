@@ -116,6 +116,7 @@ img {
 
 .contentLittle { 
   width: 30%;
+  min-width: fit-content;
   min-height: 480px;
   padding-top: 2%;
   background: var(--middle);
