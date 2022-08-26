@@ -64,6 +64,7 @@ li {
   color: var(--pop2);
 }
 
+/* This padding is for the nav but in doesn't work within the component... */
 a { 
   padding: 2.5% 3%;
   color: var(--light);
@@ -71,7 +72,7 @@ a {
 }
 
 a:hover { 
-  color: var(--pop2);
+  color: var(--pop1);
   cursor: pointer;
 }
 
@@ -92,10 +93,6 @@ a:hover {
 .btn:hover { 
   box-shadow: var(--boxShadow);
   cursor: pointer;
-}
-
-.glowOnHover:hover { 
-  color: var(--pop2);
 }
 
 img { 
@@ -131,9 +128,6 @@ img {
   border-radius: 5px;
   box-shadow: var(--boxShadow);
 }
-/* .contentLittle { 
-  width: 40%;
-} */
 
 .contentIndiv {
   width: 40%;
