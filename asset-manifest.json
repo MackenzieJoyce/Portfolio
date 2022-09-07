@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.f53c3340.css",
-    "main.js": "/Portfolio/static/js/main.d9397c75.js",
+    "main.js": "/Portfolio/static/js/main.b715a793.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/backyardJungle.png": "/Portfolio/static/media/backyardJungle.e0a56f7547e9e9a3b4d5.png",
     "static/media/nerdWall.png": "/Portfolio/static/media/nerdWall.9551b2c12ee94cf5ba5f.png",
     "static/media/businessProfile.jpeg": "/Portfolio/static/media/businessProfile.e639d4693c7ee2cffd01.jpeg",
+    "static/media/lookingForCoders.png": "/Portfolio/static/media/lookingForCoders.000da19a1195758a990d.png",
     "static/media/techBlog.png": "/Portfolio/static/media/techBlog.4f0a2288e336769315e4.png",
     "static/media/noteTaker.png": "/Portfolio/static/media/noteTaker.003b7b90502864935a2b.png",
     "static/media/textEditor.png": "/Portfolio/static/media/textEditor.ec4281cb9a24b3ffeffd.png",
     "static/media/mixUpMovieNight.png": "/Portfolio/static/media/mixUpMovieNight.0ddeb2e910cbcc36d6a1.png",
     "index.html": "/Portfolio/index.html",
     "main.f53c3340.css.map": "/Portfolio/static/css/main.f53c3340.css.map",
-    "main.d9397c75.js.map": "/Portfolio/static/js/main.d9397c75.js.map",
+    "main.b715a793.js.map": "/Portfolio/static/js/main.b715a793.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f53c3340.css",
-    "static/js/main.d9397c75.js"
+    "static/js/main.b715a793.js"
   ]
 }
