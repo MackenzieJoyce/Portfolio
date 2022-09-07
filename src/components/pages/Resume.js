@@ -44,7 +44,7 @@ const Resume = () => {
           <li>MongoDB</li>
         </div>
       </ul>
-      <h4 style={styles.subTitle}>Download my Full Resume Here</h4>
+      <h4 style={styles.subTitle}>Download My Full Resume Here</h4>
       <button className="btn" title="Resume" onClick={onDownload}>
         Download
       </button>
