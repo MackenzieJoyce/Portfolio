@@ -76,6 +76,10 @@ a:hover {
   cursor: pointer;
 }
 
+div.MuiTabs-scroller.MuiTabs-fixed.css-jpln7h-MuiTabs-scroller  div.MuiTabs-flexContainer.css-heg063-MuiTabs-flexContainer {
+  display: flex; 
+  justify-content: center}
+
 .btn {
   padding: 4.5% 9%;
   background: var(--linearGradient);
