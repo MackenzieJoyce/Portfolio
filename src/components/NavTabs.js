@@ -50,16 +50,16 @@ const NavTabs = () => {
           // 'div.MuiTabs-scroller.MuiTabes-fixed div.MuiTabs-flexContainer.css-heg063-MuiTabs-flexContainer': { display: 'flex', justifyContent: 'center' }
         }}
       >
-        <Link to="/Portfolio/">
+        <Link to="/">
           <Tab icon={<FaUser />} label="ABOUT" />
         </Link>
-        <Link to="/Portfolio/project">
+        <Link to="/project">
           <Tab icon={<FaCode />} label="PORTFOLIO" />
         </Link>
-        <Link to="/Portfolio/contact">
+        <Link to="/contact">
           <Tab icon={<FaPhone />} label="CONTACT" />
         </Link>
-        <Link to="/Portfolio/resume">
+        <Link to="/resume">
           <Tab icon={<FaFileAlt />} label="RESUME" />
         </Link>
       </Tabs>
