@@ -53,7 +53,7 @@ const Contact = () => {
           <h3 className="title" style={styles.title}>Get In Touch</h3>
           <div style={styles.list}>
             <div>
-              <Link to="/Portfolio/contact/email">Email Me!</Link>
+              <Link to="/contact/email">Email Me!</Link>
             </div>
             <ul  style={styles.leftAndRight}>
 
