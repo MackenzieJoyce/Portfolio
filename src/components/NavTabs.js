@@ -46,7 +46,7 @@ const NavTabs = () => {
           '.css-1aquho2-MuiTabs-indicator': { background: '#FE6B8B' },
           'div.MuiTabs-scroller.MuiTabs-fixed.css-jpln7h-MuiTabs-scroller': {
             width: '530px'
-          }, 'MuiTabs-scroller .MuiTabs-flexContainer.css-k008qs': { width: '800px', justifyContent: 'center', alignItems: 'center'}
+          }, 'MuiTabs-scroller .MuiTabs-flexContainer.css-k008qs': { width: '800px', justifyContent: 'center'}
         }}
       >
         <Link to="/Portfolio/">
