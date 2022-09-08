@@ -98,7 +98,7 @@ const EmailForm = () => {
         <button className="btn" type="submit">
           {status}
         </button>
-          <Link to='/Portfolio/contact'>Go Back</Link>
+          <Link to='/contact'>Go Back</Link>
         </form>
         </div>
     </div>
