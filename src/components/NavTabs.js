@@ -14,7 +14,11 @@ import { FaUser, FaCode, FaPhone, FaFileAlt } from 'react-icons/fa';
 
 const styles = {
   nav: {
-    marginBottom: '5%'
+    marginBottom: '3%',
+    width: '75%',
+  }, 
+  header: { 
+    width: '100%',
   }
 };
 
@@ -29,7 +33,7 @@ const NavTabs = () => {
   };
 
   return (
-    <header>
+    <header style={styles.header}>
       <Tabs
         onClick={selectedTab}
         onChange={handleChange}
@@ -42,7 +46,7 @@ const NavTabs = () => {
           '.css-1aquho2-MuiTabs-indicator': { background: '#FE6B8B' },
           'div.MuiTabs-scroller.MuiTabs-fixed.css-jpln7h-MuiTabs-scroller': {
             width: '530px'
-          }, 'MuiTabs-scroller .MuiTabs-flexContainer.css-k008qs': { width: '800px', justifyContent: 'center'}
+          }, 'MuiTabs-scroller .MuiTabs-flexContainer.css-k008qs': { width: '800px', justifyContent: 'center', alignItems: 'center'}
         }}
       >
         <Link to="/Portfolio/">

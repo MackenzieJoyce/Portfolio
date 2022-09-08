@@ -66,7 +66,7 @@ li {
 
 /* This padding is for the nav but in doesn't work within the component... */
 a { 
-  padding: 2.5% 3%;
+  padding: 2%;
   color: var(--light);
   text-decoration: none;
 }
