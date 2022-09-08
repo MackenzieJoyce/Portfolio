@@ -1,25 +1,22 @@
 import React from 'react';
-// import PortfolioContainer from './components/PortfolioContainer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import NavTabs from './components/NavTabs';
-import About from './components/pages/About';
-import Portfolio from './components/pages/Portfolio';
-import Contact from './components/pages/Contact';
-import EmailForm from './components/pages/compPlugins/EmailForm';
-import Resume from './components/pages/Resume';
+import NavTabs from './pages/components/NavTabs';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+import EmailForm from './pages/components/EmailForm';
+import Resume from './pages/Resume';
 
-import projects from './components/pages/compPlugins/projects';
+import projects from './pages/components/projects';
 
 const App = () => {
   return (
     <div className="wrapAll">
-      {/* <PortfolioContainer /> */}
       <Router>
         <NavTabs />
 
         <Routes>
-          {/* <Route path='/' element={<PortfolioContainer />} /> */}
           <Route path="/" element={<About />} />
           <Route
             path="/project"
@@ -33,5 +30,4 @@ const App = () => {
   );
 };
 
-// Make obj and set up browserrouter around ^
 export default App;

@@ -15,10 +15,10 @@ import { FaUser, FaCode, FaPhone, FaFileAlt } from 'react-icons/fa';
 const styles = {
   nav: {
     marginBottom: '3%',
-    width: '75%',
-  }, 
-  header: { 
-    width: '100%',
+    width: '75%'
+  },
+  header: {
+    width: '100%'
   }
 };
 
@@ -27,10 +27,18 @@ const NavTabs = () => {
   const [selectedTab, setSelectedTab] = useState(0);
 
   // Fxn triggered whenever you click another tab
-
   const handleChange = (event, newValue) => {
     setSelectedTab(newValue);
   };
+
+  // const [pages] = useState([
+  //   {name: 'About'},
+  //   {name: 'Portfolio'},
+  //   {name: 'Contact'},
+  //   {name: 'Resume'}
+  // ]);
+
+  // const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
     <header style={styles.header}>
@@ -40,26 +48,59 @@ const NavTabs = () => {
         style={styles.nav}
         sx={{
           button: { color: '#fff' },
-          'button:hover': { color: 'gray' },
+          'button:hover': { color: 'gray' }
           // 'button.Mui-selected': { color: '#FF8E53' },
           // 'button:focus': { color: '#FF8E53', borderBottom: '3px solid #ffdf5d'},
-          '.css-1aquho2-MuiTabs-indicator': { background: '#FE6B8B' },
-          'div.MuiTabs-scroller.MuiTabs-fixed.css-jpln7h-MuiTabs-scroller': {
-            width: '530px'
-          },
+          // '.css-1aquho2-MuiTabs-indicator': { background: '#FE6B8B' },
+          // 'div.MuiTabs-scroller.MuiTabs-fixed.css-jpln7h-MuiTabs-scroller': {
+          //   width: '530px'
+          // }
           // 'div.MuiTabs-scroller.MuiTabes-fixed div.MuiTabs-flexContainer.css-heg063-MuiTabs-flexContainer': { display: 'flex', justifyContent: 'center' }
         }}
       >
         <Link to="/">
+          {/* <span
+            onClick={() => handlePageChange('About')}
+            className={currentPage === 'About' ? 'nav-active-link' : 'nav-link'}
+          >
+            ABOUT
+          </span> */}
           <Tab icon={<FaUser />} label="ABOUT" />
         </Link>
-        <Link to="/project">
+        
+        <Link to="/portfolio">
+          {/* <span
+            onClick={() => handlePageChange('About')}
+            className={
+              currentPage === 'Portfolio' ? 'nav-active-link' : 'nav-link'
+            }
+          >
+            PORTFOLIO
+          </span> */}
           <Tab icon={<FaCode />} label="PORTFOLIO" />
         </Link>
+
         <Link to="/contact">
+          {/* <span
+            onClick={() => handlePageChange('About')}
+            className={
+              currentPage === 'Contact' ? 'nav-active-link' : 'nav-link'
+            }
+          >
+            CONTACT
+          </span> */}
           <Tab icon={<FaPhone />} label="CONTACT" />
         </Link>
+
         <Link to="/resume">
+          {/* <span
+            onClick={() => handlePageChange('About')}
+            className={
+              currentPage === 'Resume' ? 'nav-active-link' : 'nav-link'
+            }
+          >
+            RESUME
+          </span> */}
           <Tab icon={<FaFileAlt />} label="RESUME" />
         </Link>
       </Tabs>

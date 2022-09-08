@@ -21,7 +21,7 @@ const About = () => {
         <div className="title">
           <img
             style={styles.profile}
-            src={require('../../img/businessProfile.jpeg')}
+            src={require('../assets/img/businessProfile.jpeg')}
             alt="Mackenzie Joyce"
           />
         </div>
