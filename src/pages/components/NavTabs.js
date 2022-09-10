@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 // import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 // import { styled } from '@mui/material/styles';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import { FaUser, FaCode, FaPhone, FaFileAlt } from 'react-icons/fa';
+// import Tabs from '@mui/material/Tabs';
+// import Tab from '@mui/material/Tab';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faCode, faPhone, faFileLines } from '@fortawesome/free-solid-svg-icons';
 
 // import About from './pages/About';
 // import Portfolio from './pages/Portfolio';
@@ -14,12 +15,24 @@ import { FaUser, FaCode, FaPhone, FaFileAlt } from 'react-icons/fa';
 // import projects from './pages/compPlugins/projects';
 
 const styles = {
-  nav: {
-    marginBottom: '3%',
-    width: '75%'
-  },
   header: {
-    width: '100%'
+    width: '60%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  nav: {
+    margin: '2%',
+    width: '75%',
+    display: 'flex',
+    justifyContent: 'space-around'
+  },
+  navTab: { 
+    minHeight: 42,
+    display: 'flex',
+    flexDirection: 'column', 
+    justifyContent: 'space-between',
+    padding: '3%', 
   }
 };
 
@@ -102,7 +115,7 @@ const NavTabs = () => {
         // 'div.MuiTabs-scroller.MuiTabes-fixed div.MuiTabs-flexContainer.css-heg063-MuiTabs-flexContainer': { display: 'flex', justifyContent: 'center' }
         // }}
       >
-        <Link to="/">
+        <Link style={styles.navTab} to="/">
           {/* <Tab
             onClick={() => handlePageChange('About')}
             className={currentPage === 'About' ? 'nav-active-link' : 'nav-link'}
@@ -110,10 +123,11 @@ const NavTabs = () => {
             ABOUT
           </Tab> */}
           {/* <StyledTab icon={<FaUser />} label="ABOUT" /> */}
-
+          <FontAwesomeIcon icon={faUser} />
+          <span>ABOUT</span>
         </Link>
 
-        <Link to="/portfolio">
+        <Link style={styles.navTab} to="/portfolio">
           {/* <Tab
             onClick={() => handlePageChange('About')}
             className={
@@ -123,9 +137,11 @@ const NavTabs = () => {
             PORTFOLIO
           </Tab> */}
           {/* <StyledTab icon={<FaCode />} label="PORTFOLIO" /> */}
+          <FontAwesomeIcon icon={faCode} />
+          <span>PORTFOLIO</span>
         </Link>
 
-        <Link to="/contact">
+        <Link style={styles.navTab} to="/contact">
           {/* <Tab
             onClick={() => handlePageChange('About')}
             className={
@@ -135,9 +151,11 @@ const NavTabs = () => {
             CONTACT
           </Tab> */}
           {/* <StyledTab icon={<FaPhone />} label="CONTACT" /> */}
+          <FontAwesomeIcon icon={faPhone} />
+          <span>CONTACT</span>
         </Link>
 
-        <Link to="/resume">
+        <Link style={styles.navTab} to="/resume">
           {/* <Tab
             onClick={() => handlePageChange('About')}
             className={
@@ -147,6 +165,8 @@ const NavTabs = () => {
             RESUME
           </Tab> */}
           {/* <StyledTab icon={<FaFileAlt />} label="RESUME" /> */}
+          <FontAwesomeIcon icon={faFileLines} />
+          <span>RESUME</span>
         </Link>
       </nav>
       {/* {selectedTab === 0 && <About />}
