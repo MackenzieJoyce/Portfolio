@@ -36,7 +36,7 @@ const App = () => {
           currentPage={currentPage}
           handlePageChange={handlePageChange}
         />
-        {renderPage()}
+        {/* {renderPage()} */}
 
         <Routes>
           <Route path="/" element={<About />} />
