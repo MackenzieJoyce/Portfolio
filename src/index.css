@@ -59,7 +59,6 @@ li {
   color: var(--pop2);
 }
 
-/* This padding is for the nav but in doesn't work within the component... */
 a { 
   padding-top: 2%;
   color: var(--light);
@@ -68,16 +67,8 @@ a {
 
 a:hover { 
   color: var(--pop1);
+  transform: scale(1.1);
   cursor: pointer;
-}
-
-/* div.MuiTabs-scroller.MuiTabs-fixed.css-jpln7h-MuiTabs-scroller  div.MuiTabs-flexContainer.css-heg063-MuiTabs-flexContainer {
-  display: flex; 
-  justify-content: center !important;
-} */
-
-button.MuiButtonBase-root.MuiTab-root.MuiTab-labelIcon.MuiTab-textColorInherit.css-31rim9-MuiButtonBase-root-MuiTab-root { 
-  margin: 0px;
 }
 
 .btn {
