@@ -21,6 +21,7 @@ const Project = ({ project }) => {
       >
         <img src={project.img} alt={project.title} style={styles.img} />
         <h3>{project.title}</h3>
+        <span>{ }</span>
       </a>
     </>
 
