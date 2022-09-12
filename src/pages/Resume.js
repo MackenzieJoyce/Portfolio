@@ -3,14 +3,16 @@ import React from 'react';
 
 const styles = {
   underlineSmaller: {
-    margin: '0 15%'
+    margin: '0 8%'
   },
   subTitle: {
-    margin: '8% 0 6% 0'
+    margin: '5% 0 5% 0'
   },
-  leftAndRight: {
+  ul: {
     width: '100%',
     marginBottom: '13%',
+    fontSize: '1.1rem',
+    // lineHeight: '1.7rem',
     display: 'flex',
     justifyContent: 'space-around',
   }
@@ -30,7 +32,7 @@ const Resume = () => {
         Resume
       </h3>
       <h4 style={styles.subTitle}>Proficiencies</h4>
-      <ul style={styles.leftAndRight}>
+      <ul style={styles.ul}>
         <div>
           <li>HTML5</li>
           <li>CSS</li>

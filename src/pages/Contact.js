@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const styles = {
   title: { 
-    margin: '0 10% 10% 10%'
+    margin: '0 8%'
   },
   list: {
     display: 'flex',
@@ -27,13 +27,14 @@ const styles = {
     lineHeight: '1.7rem',
   },
   emailMe: { 
+    marginTop: '5%',
     fontSize: '1.5rem'
   },
   icons: {
     fontSize: '2.4rem',
     marginBottom: '5%',
   },
-  leftAndRight: {
+  ul: {
     display: 'flex',
     justifyContent: 'space-around',
   }
@@ -49,7 +50,7 @@ const Contact = () => {
             <div style={styles.emailMe}>
               <Link to="/contact/email">Email Me!</Link>
             </div>
-            <ul style={styles.leftAndRight}>
+            <ul style={styles.ul}>
 
               <div>
               {/* ^ style={styles.sides} */}
