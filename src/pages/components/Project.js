@@ -21,18 +21,10 @@ const Project = ({ project }) => {
       >
         <img src={project.img} alt={project.title} style={styles.img} />
         <h3>{project.title}</h3>
-        <span>{ }</span>
+        <span>{project.tech}</span>
+        <p>{project.text}</p>
       </a>
     </>
-
-    // <div className="projectCard">
-    //   <img src={project.img} alt={project.title} />
-    //   <div className='projectCardContent'>
-    //     <h3 className="title">{project.title}</h3>
-    //     <p className="">{project.text}</p>
-    //     <span className="standout">{project.tech}</span>
-    //   </div>
-    // </div>
   );
 };
 
