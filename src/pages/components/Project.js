@@ -21,9 +21,9 @@ const Project = ({ project }) => {
       style={styles.aTag}
       target="_blank"
       rel="noopener noreferrer"
-      className='projectEntire info'
+      className='projectEntire'
     >
-      <img src={project.img} alt={project.title} style={styles.img} />
+      <img src={project.img} alt={project.title} style={styles.img}  className='projectImg'/>
       <div className='projectInfo'>
         <h3>{project.title}</h3>
         <p>{project.tech}</p>
