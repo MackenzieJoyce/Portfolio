@@ -9,8 +9,7 @@ const styles = {
     width: 'fit-content',
     padding: 0,
     display: 'flex',
-    justifyContent: 'center',
-    flexWrap: 'wrap'
+    // flexWrap: 'wrap'
   }
 };
 
