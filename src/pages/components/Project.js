@@ -1,18 +1,20 @@
 import React from 'react';
+// import { Carousel } from 'react-responsive-carousel';
+// import Carousel from 'react-bootstrap/Carousel';
 
 const styles = {
   aTag: {
     padding: 0
   },
   img: {
-    height: 440,
+    width: '60%',
+    // height: 440,
     background: 'rgb(255, 223, 93, 0.5)'
   }
 };
 
 const Project = ({ project }) => {
   return (
-    <>
       <a
         href={project.link}
         style={styles.aTag}
@@ -24,7 +26,6 @@ const Project = ({ project }) => {
         <span>{project.tech}</span>
         <p>{project.text}</p>
       </a>
-    </>
   );
 };
 

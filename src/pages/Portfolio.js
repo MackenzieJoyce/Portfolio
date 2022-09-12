@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
@@ -8,14 +8,24 @@ const styles = {
   projectContainer: {
     width: 'fit-content',
     padding: 0,
-    display: 'flex'    // flexWrap: 'wrap'
+    display: 'flex' // flexWrap: 'wrap'
   }
 };
 
 const Portfolio = ({ projects }) => {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
   return (
     <div className="contentEntire" style={styles.projectContainer}>
-      <Carousel style={styles.arrow}>
+      <Carousel
+        style={styles.arrow}
+        activeIndex={index}
+        onSelect={handleSelect}
+      >
         {/* Bringing in the Project component as a prop */}
         {projects.map((project) => (
           <Project key={project.id} project={project} />
