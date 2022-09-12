@@ -7,25 +7,29 @@ const styles = {
     padding: 0
   },
   img: {
-    width: '60%',
+    // width: '60%',
     // height: 440,
-    background: 'rgb(255, 223, 93, 0.5)'
+    background: 'rgb(255, 223, 93, 0.5)',
+    borderRadius: 5
   }
 };
 
 const Project = ({ project }) => {
   return (
-      <a
-        href={project.link}
-        style={styles.aTag}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src={project.img} alt={project.title} style={styles.img} />
+    <a
+      href={project.link}
+      style={styles.aTag}
+      target="_blank"
+      rel="noopener noreferrer"
+      className='projectEntire info'
+    >
+      <img src={project.img} alt={project.title} style={styles.img} />
+      <div className='projectInfo'>
         <h3>{project.title}</h3>
-        <span>{project.tech}</span>
+        <p>{project.tech}</p>
         <p>{project.text}</p>
-      </a>
+      </div>
+    </a>
   );
 };
 

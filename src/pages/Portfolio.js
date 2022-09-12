@@ -6,9 +6,10 @@ import Project from './components/Project';
 
 const styles = {
   projectContainer: {
-    width: 'fit-content',
+    // width: '70%',
     padding: 0,
-    display: 'flex' // flexWrap: 'wrap'
+    display: 'flex'
+    // flexWrap: 'wrap'
   }
 };
 
