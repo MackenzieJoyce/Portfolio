@@ -76,7 +76,7 @@ a:hover {
 }
 
 .btn {
-  padding: 4.5% 9%;
+  padding: 4% 7%;
   background: var(--linearGradient);
   color: var(--dark);
   font-size: 1.3rem;
@@ -280,7 +280,7 @@ nav {
 
 .resumeUl {
   width: 100%;
-  margin-bottom: 13%;
+  margin-bottom: 0%;
   font-size: 1.1rem;
   display: flex;
   justify-content: space-around;
