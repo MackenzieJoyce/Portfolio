@@ -8,7 +8,8 @@ const styles = {
   projectContainer: {
     // width: '70%',
     padding: 0,
-    display: 'flex'
+    display: 'flex',
+    height: 'fit-content'
     // flexWrap: 'wrap'
   }
 };
@@ -21,7 +22,7 @@ const Portfolio = ({ projects }) => {
   };
 
   return (
-    <div className="contentEntire" style={styles.projectContainer}>
+    <div className="contentLittle" style={styles.projectContainer}>
       <Carousel
         style={styles.arrow}
         activeIndex={index}

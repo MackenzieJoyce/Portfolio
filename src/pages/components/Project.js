@@ -7,10 +7,7 @@ const styles = {
     padding: 0
   },
   img: {
-    // width: '60%',
-    // height: 440,
-    background: 'rgb(255, 223, 93, 0.5)',
-    borderRadius: 5
+    width: '93%',
   }
 };
 
