@@ -25,7 +25,7 @@ const About = () => {
             alt="Mackenzie Joyce"
           />
         </div>
-        <h1>Mackenzie Joyce</h1>
+        <h1 className='squareContent'>Mackenzie Joyce</h1>
       </div>
       <div className="contentIndiv">
         <h2 className="title aboutTitle">Front-End Web Developer</h2>

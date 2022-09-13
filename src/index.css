@@ -135,6 +135,11 @@ img {
   border-top: 2px solid var(--pop1);
 }
 
+h1.squareContent { 
+  margin-top: 10%;
+  padding-top: 3%;
+}
+
 .squareContent p { 
   padding-top: 8%;
 }
@@ -325,17 +330,11 @@ nav {
 
   /* NAVBAR */
   header {
-    height: 75px;
     font-size: .9rem;
-  }
-  
-  nav {
-    margin: 0%;
   }
 
   .navTab { 
-    min-height: 42;
-    padding: 3% 8%; 
+    padding: 8%; 
   }
 
   .mobileView { 
@@ -352,8 +351,13 @@ nav {
     border-bottom: none;
   }
 
+  h1.squareContent { 
+    border: none;
+    padding: 0;
+  }
+
   h2.title {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 
   .title img { 
@@ -361,15 +365,14 @@ nav {
     /* margin-bottom: 0%; */
   }
 
-  .title + p { 
-    padding-top: 3%;
-    border-top: 2px solid var(--pop1);
+  .squareContent p { 
+    padding: 3% 0;
   }
 
-  .title + p,
-  .title + p + p { 
+  /* .squareContent + p,
+  .squareContent + p + p { 
     margin: 6%;
-  }
+  } */
 
 
 
@@ -378,10 +381,10 @@ nav {
     margin: 5% 0;
     border: none;
   }
-
+/* 
   .contactUlTag {
     display: block;
-  }
+  } */
 
   .contactList {
     margin: 5% 5% 0 5%;
@@ -394,17 +397,11 @@ nav {
     font-size: 1.3rem;
   }
 
-  .contactATag {
+  /* .contactATag {
     margin: 10%;
     padding: 0%;
     font-size: 1.1rem;
     line-height: 1.3rem;
-  }
-
-  /* .contactSpanTag {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   } */
 
   .contactIcons {
