@@ -18,7 +18,7 @@ const About = () => {
     <div className="content contentEntire">
       {/* <NavTabs /> */}
       <div className="contentIndiv">
-        <div className="title">
+        <div className="title aboutTitle">
           <img
             style={styles.profile}
             src={require('../assets/img/businessProfile.jpeg')}
@@ -28,7 +28,7 @@ const About = () => {
         <h1>Mackenzie Joyce</h1>
       </div>
       <div className="contentIndiv">
-        <h2 className="title">Front-End Web Developer</h2>
+        <h2 className="title aboutTitle">Front-End Web Developer</h2>
         <p>
           I am a recent graduate of a full-stack coding bootcamp. My strong suit
           is creating web apps that are clean and simple, yet still have
