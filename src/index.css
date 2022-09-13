@@ -319,6 +319,15 @@ nav {
     margin: 0%;
   }
 
+  .navTab { 
+    min-height: 42;
+    padding: 3% 8%; 
+  }
+
+  .mobileView { 
+    display: none;
+  }
+
 
   
   /* ABOUT PAGE  */

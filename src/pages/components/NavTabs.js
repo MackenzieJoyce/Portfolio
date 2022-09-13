@@ -127,7 +127,7 @@ const NavTabs = () => {
           <span>ABOUT</span>
         </Link>
 
-        <Link style={styles.navTab} className='navTab' to="/portfolio">
+        <Link style={styles.navTab} className='navTab mobileView' to="/portfolio">
           {/* <Tab
             onClick={() => handlePageChange('About')}
             className={
