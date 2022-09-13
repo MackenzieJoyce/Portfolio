@@ -217,6 +217,39 @@ nav {
 
 
 
+/* CONTACT */
+.contactTitle {
+  margin: 0 8%;
+}
+.contactList {
+  display: flex;
+  flex-direction: column;
+}
+.contactSpanTag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactATag {
+  padding: 5%;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+.contactEmailMe {
+  margin-top: 5%;
+  font-size: 1.5rem;
+}
+.contactIcons {
+  font-size: 2.4rem;
+  margin-bottom: 5%;
+}
+.contactUlTag {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
 /* MEDIA QUERIES */
 /* 769 */
 
@@ -228,6 +261,12 @@ nav {
 @media screen and (max-width: 430px) {
   /* EVERY PAGE */
   .contentEntire {
+    height: min-content;
+    margin-bottom: 10%;
+  }
+
+  .contentLittle { 
+    width: 70%;
     height: min-content;
     margin-bottom: 10%;
   }
@@ -250,10 +289,7 @@ nav {
   }
 
   .title {
-    margin-bottom: 9%;
-    padding-bottom: 0;
-    text-align: center;
-    border-bottom: none;
+    color: var(--pop1)
   } 
 
 
@@ -271,6 +307,13 @@ nav {
 
   
   /* ABOUT PAGE  */
+  .aboutTitle { 
+    margin-bottom: 9%;
+    padding-bottom: 0;
+    text-align: center;
+    border-bottom: none;
+  }
+
   h2.title {
     font-size: 1.4rem;
   }
@@ -288,6 +331,35 @@ nav {
   .title + p,
   .title + p + p { 
     margin: 6%;
+  }
+
+
+
+  /* CONTACT */
+  .contactTitle {
+    margin: 5% 0;
+    border: none;
+  }
+  .contactUlTag {
+    display: block;
+  }
+  .contactList {
+    margin: 5% 5% 0 5%;
+    padding-top: 3%;
+    border-top: 2px solid var(--pop1);
+  }
+  .contactATag {
+    padding: 0%;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+  }
+  .contactEmailMe {
+    margin-top: 0%;
+    font-size: 1.5rem;
+  }
+  .contactIcons {
+    font-size: 2rem;
+    margin-bottom: 5%;
   }
 
 }
