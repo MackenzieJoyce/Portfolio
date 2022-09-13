@@ -4,6 +4,10 @@
 
 ## Description
 
+Netlify: 
+https://631ffea85103a0457707cc7b--lucent-hamster-9afba5.netlify.app/
+
+GitHub Pages: 
 https://mackenziejoyce.github.io/Portfolio/
 
 This is an updated portfolio using React, Material UI, and react-router-dom. The design is simple to highlight the content in the pages. When you click the link to view the site the user is met with the About page, giving a short description about myself. The next page features a carousel displaying the landing pages of my completed projects. The other pages contain contact information, a list of my current proficiencies, and a download button for my professional resume.
