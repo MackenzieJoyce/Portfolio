@@ -103,7 +103,7 @@ img {
 .contentEntire {
   width: 70%;
   height: 500px;
-  min-height: 480px;
+  /* min-height: 480px; */
   padding-top: 2%;
   background: var(--middle);
   text-align: center;
@@ -133,6 +133,13 @@ img {
   margin-bottom: 9%;
   padding-bottom: 3%;
   border-bottom: 2px solid var(--pop1);
+}
+
+.title img { 
+  width: 320px;
+  border-radius: 200px;
+  margin: 1%;
+  box-shadow: 0 0 5px 3px #ffdf5d;
 }
 
 /* Pushes the text out of view when it is supposed to fit into the carousel */ 
@@ -168,4 +175,63 @@ img {
 
 .projectEntire { 
   cursor: pointer;
+}
+
+
+/* 769 */
+
+
+/* 500 */
+
+
+/* 425 */
+@media screen and (max-width: 430px) {
+  .contentEntire {
+    height: min-content;
+    margin-bottom: 10%;
+  }
+
+  .content { 
+    display: block;
+  }
+
+  .contentIndiv {
+    width: 100%;
+    margin: 15% 0;
+  } 
+  
+  .contentEntire .contentIndiv { 
+    margin-top: 5%;
+  }
+
+  .contentIndiv + .contentIndiv { 
+    margin-bottom: 0;
+  }
+
+  .title {
+    margin-bottom: 9%;
+    padding-bottom: 0;
+    text-align: center;
+    border-bottom: none;
+  } 
+
+  h2.title {
+    font-size: 1.4rem;
+  }
+
+  .title img { 
+    width: 50%;
+    /* margin-bottom: 0%; */
+  }
+
+  .title + p { 
+    padding-top: 3%;
+    border-top: 2px solid var(--pop1);
+  }
+
+  .title + p,
+  .title + p + p { 
+    margin: 6%;
+  }
+
 }

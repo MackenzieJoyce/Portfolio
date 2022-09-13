@@ -4,13 +4,13 @@ import React from 'react';
 // import NavTabs from '../NavTabs';
 
 const styles = {
-  profile: {
-    width: 320,
-    borderRadius: 200,
-    margin: '1%',
-    // border: '2px solid #f7af88', 
-    boxShadow: '0 0 5px 3px #ffdf5d'
-  }
+  // profile: {
+  //   width: 320,
+  //   borderRadius: 200,
+  //   margin: '1%',
+  //   // border: '2px solid #f7af88', 
+  //   boxShadow: '0 0 5px 3px #ffdf5d'
+  // }
 };
 
 const About = () => {
@@ -27,7 +27,7 @@ const About = () => {
         </div>
         <h1>Mackenzie Joyce</h1>
       </div>
-      <div className="contentIndiv" border-right="1px solid gray">
+      <div className="contentIndiv">
         <h2 className="title">Front-End Web Developer</h2>
         <p>
           I am a recent graduate of a full-stack coding bootcamp. My strong suit
