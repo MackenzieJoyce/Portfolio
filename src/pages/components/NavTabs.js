@@ -15,25 +15,25 @@ import { faUser, faCode, faPhone, faFileLines } from '@fortawesome/free-solid-sv
 // import projects from './pages/compPlugins/projects';
 
 const styles = {
-  header: {
-    width: '60%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  nav: {
-    margin: '2%',
-    width: '75%',
-    display: 'flex',
-    justifyContent: 'space-around'
-  },
-  navTab: { 
-    minHeight: 42,
-    display: 'flex',
-    flexDirection: 'column', 
-    justifyContent: 'space-between',
-    padding: '3%', 
-  }
+  // header: {
+  //   width: '60%',
+  //   display: 'flex',
+  //   justifyContent: 'center',
+  //   alignItems: 'center'
+  // },
+  // nav: {
+  //   margin: '2%',
+  //   width: '75%',
+  //   display: 'flex',
+  //   justifyContent: 'space-around'
+  // },
+  // navTab: { 
+  //   minHeight: 42,
+  //   display: 'flex',
+  //   flexDirection: 'column', 
+  //   justifyContent: 'space-between',
+  //   padding: '3%', 
+  // }
 };
 
 // const StyledTabs = styled((props) => (
