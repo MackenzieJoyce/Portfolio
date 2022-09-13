@@ -6,7 +6,7 @@ import {
   FaLinkedin
 } from 'react-icons/fa';
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const styles = {
   // title: {
@@ -49,7 +49,16 @@ const Contact = () => {
         </h3>
         <div className="contactList" style={styles.list}>
           <div className="contactEmailMe" style={styles.emailMe}>
-            <Link to="/contact/email">Email Me!</Link>
+            {/* <Link to="/contact/email"> */}
+            <a
+              href="mailto:MackenzieJoyce414@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              title="Email Address: MackenzieJoyce414@gmail.com"
+            >
+              Email Me!
+            </a>
+            {/* </Link> */}
           </div>
           <ul className="contactUlTag" style={styles.ul}>
             <div>
@@ -93,7 +102,10 @@ const Contact = () => {
                   title="Twitter: FreshCodeFish"
                 >
                   <span className="contactSpanTag" style={styles.span}>
-                    <FaTwitterSquare className="contactIcons" style={styles.icons} />
+                    <FaTwitterSquare
+                      className="contactIcons"
+                      style={styles.icons}
+                    />
                     Twitter - FreshCodeFish
                   </span>
                 </a>
