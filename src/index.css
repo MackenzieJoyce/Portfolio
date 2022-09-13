@@ -183,9 +183,9 @@ nav {
 /* Pushes the text out of view when it is supposed to fit into the carousel */ 
 /* Makes the width 100% on the browser */
 /* Only effects the content within the container */
-/* .contentEntire .carousel-root { 
-  width: 40%;
-} */
+.contentEntire .carousel-root { 
+  width: 100%;
+}
 
 /* Hides the "# out of #" label in top right corner */
 .contentEntire .carousel .carousel-status { 
@@ -266,12 +266,6 @@ nav {
 
 
 /* MEDIA QUERIES */
-/* 769 */
-
-
-/* 500 */
-
-
 /* 770 */
 @media screen and (max-width: 770px) {
   /* EVERY PAGE */
