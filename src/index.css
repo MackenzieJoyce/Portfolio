@@ -1,3 +1,4 @@
+/* VARIABLES */
 :root { 
   --dark: #1d1d1d;
   --middle: rgba(255, 255, 255, 0.16);
@@ -9,6 +10,9 @@
   /* f7af88 */
 }
 
+
+
+/* TYPOGRAPHY+ */
 body {
   width: 100%;
   height: 100vh;
@@ -94,6 +98,9 @@ img {
   object-fit: contain;
 }
 
+
+
+/* EVERY PAGE */
 .content { 
   display: inline-flex;
   justify-content: space-around;
@@ -135,6 +142,34 @@ img {
   border-bottom: 2px solid var(--pop1);
 }
 
+
+
+/* NAVBAR */
+header {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+nav {
+  margin: 2%;
+  width: 75%;
+  display: flex;
+  justify-content: space-around
+}
+
+.navTab { 
+  min-height: 42;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  padding: 3%; 
+}
+
+
+
+/* ABOUT */
 .title img { 
   width: 320px;
   border-radius: 200px;
@@ -142,6 +177,9 @@ img {
   box-shadow: 0 0 5px 3px #ffdf5d;
 }
 
+
+
+/* PORTFOLIO */
 /* Pushes the text out of view when it is supposed to fit into the carousel */ 
 /* Makes the width 100% on the browser */
 /* Only effects the content within the container */
@@ -178,6 +216,8 @@ img {
 }
 
 
+
+/* MEDIA QUERIES */
 /* 769 */
 
 
@@ -186,6 +226,7 @@ img {
 
 /* 425 */
 @media screen and (max-width: 430px) {
+  /* EVERY PAGE */
   .contentEntire {
     height: min-content;
     margin-bottom: 10%;
@@ -215,6 +256,25 @@ img {
     border-bottom: none;
   } 
 
+
+
+  /* NAVBAR */
+  header {
+    height: 75px;
+    font-size: .9rem;
+  }
+  
+  nav {
+    margin: 0%;
+  }
+  
+  .navTab { 
+    padding: 0%; 
+  }
+
+
+  
+  /* ABOUT PAGE  */
   h2.title {
     font-size: 1.4rem;
   }

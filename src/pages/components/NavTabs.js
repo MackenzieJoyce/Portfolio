@@ -115,7 +115,7 @@ const NavTabs = () => {
         // 'div.MuiTabs-scroller.MuiTabes-fixed div.MuiTabs-flexContainer.css-heg063-MuiTabs-flexContainer': { display: 'flex', justifyContent: 'center' }
         // }}
       >
-        <Link style={styles.navTab} to="/">
+        <Link style={styles.navTab} className='navTab' to="/">
           {/* <Tab
             onClick={() => handlePageChange('About')}
             className={currentPage === 'About' ? 'nav-active-link' : 'nav-link'}
@@ -127,7 +127,7 @@ const NavTabs = () => {
           <span>ABOUT</span>
         </Link>
 
-        <Link style={styles.navTab} to="/portfolio">
+        <Link style={styles.navTab} className='navTab' to="/portfolio">
           {/* <Tab
             onClick={() => handlePageChange('About')}
             className={
@@ -141,7 +141,7 @@ const NavTabs = () => {
           <span>PORTFOLIO</span>
         </Link>
 
-        <Link style={styles.navTab} to="/contact">
+        <Link style={styles.navTab} className='navTab' to="/contact">
           {/* <Tab
             onClick={() => handlePageChange('About')}
             className={
@@ -155,7 +155,7 @@ const NavTabs = () => {
           <span>CONTACT</span>
         </Link>
 
-        <Link style={styles.navTab} to="/resume">
+        <Link style={styles.navTab} className='navTab' to="/resume">
           {/* <Tab
             onClick={() => handlePageChange('About')}
             className={
