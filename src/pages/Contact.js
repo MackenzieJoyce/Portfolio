@@ -43,7 +43,6 @@ const styles = {
 const Contact = () => {
   return (
     <div className="content contentLittle">
-      <div>
         <h3 className="title contactTitle" style={styles.title}>
           Get In Touch
         </h3>
@@ -120,7 +119,6 @@ const Contact = () => {
             </div>
           </ul>
         </div>
-      </div>
     </div>
   );
 };

@@ -251,7 +251,7 @@ nav {
 
 
 /* RESUME */
-/* .resumeSubTitle {
+.resumeSubTitle {
   margin: 5% 0 5% 0;
 }
 
@@ -261,7 +261,7 @@ nav {
   font-size: 1.1rem;
   display: flex;
   justify-content: space-around;
-} */
+}
 
 
 
@@ -275,13 +275,9 @@ nav {
 /* 425 */
 @media screen and (max-width: 430px) {
   /* EVERY PAGE */
-  .contentEntire {
-    height: min-content;
-    margin-bottom: 10%;
-  }
-
-  .contentLittle { 
-    width: 70%;
+  .contentEntire, 
+  .contentLittle {
+    width: 80%;
     height: min-content;
     margin-bottom: 10%;
   }
@@ -364,31 +360,52 @@ nav {
     margin: 5% 0;
     border: none;
   }
+
   .contactUlTag {
     display: block;
   }
+
   .contactList {
     margin: 5% 5% 0 5%;
     padding-top: 3%;
     border-top: 2px solid var(--pop1);
   }
-  .contactATag {
-    padding: 0%;
-    font-size: 1.3rem;
-    line-height: 1.4rem;
-  }
+  
   .contactEmailMe {
-    margin-top: 0%;
-    font-size: 1.5rem;
-  }
-  .contactIcons {
-    font-size: 2rem;
-    margin-bottom: 5%;
+    margin-top: 3%;
+    font-size: 1.3rem;
   }
 
+  .contactATag {
+    margin: 10%;
+    padding: 0%;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+
+  /* .contactSpanTag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .contactIcons {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+
+
+
+  /* RESUME */
+  .resumeTitle { 
+    margin: 5% 0 0 0;
+    border: none;
+  }
 
   .resumeContent { 
-    padding-bottom: 9%;
+    margin: 5% 5% 0 5%;
+    padding: 3% 5% 9% 5%;
+    border-top: 2px solid var(--pop1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -397,5 +414,10 @@ nav {
   .resumeSubTitle.reduce {
     width: 80%;
     line-break: normal;
+  }
+
+  .resumeUl { 
+    width: 100%;
+    font-size: 1rem;
   }
 }
