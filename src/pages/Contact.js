@@ -46,7 +46,7 @@ const Contact = () => {
         <h3 className="title contactTitle" style={styles.title}>
           Get In Touch
         </h3>
-        <div className="contactList" style={styles.list}>
+        <div className="contactList squareContent" style={styles.list}>
           <div className="contactEmailMe" style={styles.emailMe}>
             {/* <Link to="/contact/email"> */}
             <a

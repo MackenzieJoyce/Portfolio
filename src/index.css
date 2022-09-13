@@ -51,9 +51,9 @@ p {
   line-height: 1.6rem;
 }
 
-p + p { 
+/* p + p { 
   margin-top: 1.5rem;
-}
+} */
 
 li {
   margin: 15% 0;
@@ -110,7 +110,6 @@ img {
 .contentEntire {
   width: 70%;
   height: 500px;
-  /* min-height: 480px; */
   padding-top: 2%;
   background: var(--middle);
   text-align: center;
@@ -120,7 +119,7 @@ img {
 } 
 
 .contentLittle { 
-  width: 30%;
+  width: 50%;
   height: 500px;
   min-width: fit-content;
   padding-top: 2%;
@@ -131,15 +130,24 @@ img {
   box-shadow: var(--boxShadow);
 }
 
+.squareContent { 
+  margin: 5% 5% 0 5%;
+  border-top: 2px solid var(--pop1);
+}
+
+.squareContent p { 
+  padding-top: 8%;
+}
+
 .contentIndiv {
   width: 40%;
 }
 
 .title {
   text-align: center;
-  margin-bottom: 9%;
-  padding-bottom: 3%;
-  border-bottom: 2px solid var(--pop1);
+  /* margin-bottom: 5%; */
+  /* padding-bottom: 3%; */
+  /* border-bottom: 2px solid var(--pop1); */
 }
 
 

@@ -31,7 +31,7 @@ const Resume = () => {
       <h3 className="title resumeTitle" style={styles.underlineSmaller}>
         Resume
       </h3>
-      <div className='resumeContent'>
+      <div className='resumeContent squareContent'>
         <h4 className='resumeSubTitle' style={styles.subTitle}>Proficiencies</h4>
         <ul className='resumeUl' style={styles.ul}>
           <div>
