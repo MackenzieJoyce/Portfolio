@@ -27,7 +27,7 @@ const Resume = () => {
   };
 
   return (
-    <div className="content contentLittle">
+    <div className="contentLittle">
       <h3 className="title resumeTitle" style={styles.underlineSmaller}>
         Resume
       </h3>

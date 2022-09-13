@@ -270,7 +270,8 @@ nav {
 @media screen and (max-width: 770px) {
   /* EVERY PAGE */
   .contentEntire, 
-  .contentLittle {
+  .contentLittle 
+  {
     width: 80%;
     height: min-content;
     margin-bottom: 10%;
