@@ -250,6 +250,21 @@ nav {
 
 
 
+/* RESUME */
+/* .resumeSubTitle {
+  margin: 5% 0 5% 0;
+}
+
+.resumeUl {
+  width: 100%;
+  margin-bottom: 13%;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-around;
+} */
+
+
+
 /* MEDIA QUERIES */
 /* 769 */
 
@@ -362,4 +377,16 @@ nav {
     margin-bottom: 5%;
   }
 
+
+  .resumeContent { 
+    padding-bottom: 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resumeSubTitle.reduce {
+    width: 80%;
+    line-break: normal;
+  }
 }
