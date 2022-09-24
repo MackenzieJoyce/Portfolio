@@ -18,6 +18,11 @@ const styles = {
   subtitle: {
     marginTop: '2%',
     color: '#ffdf5d'
+  },
+  button: {
+    marginTop: '5%',
+    // display: 'flex',
+    // justifyContent: 'center'
   }
 };
 
@@ -39,6 +44,9 @@ const About = () => {
           include a MERN stack. I am looking for work, so please feel free to
           meesage me regarding opportunities... Or just say hi!
         </p>
+        <div style={styles.button}>
+          <button className="btn" style={styles.aboutP}>Email Me</button>
+        </div>
       </div>
 
       <div className="squareContent">
