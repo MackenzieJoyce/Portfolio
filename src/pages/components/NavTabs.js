@@ -53,10 +53,10 @@ const NavTabs = () => {
           <FontAwesomeIcon icon={faCode} />
           <span>PORTFOLIO</span>
         </Link>
-        <Link style={styles.navTab} className='navTab' to="/contact">
+        {/* <Link style={styles.navTab} className='navTab' to="/contact">
           <FontAwesomeIcon icon={faPhone} />
           <span>CONTACT</span>
-        </Link>
+        </Link> */}
         {/* <Link style={styles.navTab} className="navTab" to="/resume">
           <FontAwesomeIcon icon={faFileLines} />
           <span>RESUME</span>
