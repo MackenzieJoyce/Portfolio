@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faUser,
   faCode,
-  faPhone,
-  faFileLines
+  // faPhone,
+  // faFileLines
 } from '@fortawesome/free-solid-svg-icons';
 
 const styles = {
