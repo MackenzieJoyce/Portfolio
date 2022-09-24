@@ -21,12 +21,6 @@ body {
   color: var(--light);
 }
 
-/* .wrapAll { 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
 h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -50,14 +44,6 @@ p {
   text-align: left;
   line-height: 1.6rem;
 }
-
-/* p + p { 
-  margin-top: 1.5rem;
-} */
-
-/* li {
-  margin: 15% 0;
-} */
 
 .standout { 
   color: var(--pop2);
@@ -100,53 +86,21 @@ img {
 
 /* EVERY PAGE */
 .content { 
+  padding-top: 2%;
+  text-align: left;
   display: inline-flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
 }
 
-.contentEntire {
-  /* width: 70%; */
-  /* height: 100vh; */
-  padding-top: 2%;
-  /* background: var(--middle); */
-  text-align: left;
-  /* border: 1px solid slategrey;
-  border-radius: 5px;
-  box-shadow: 0 0 10px 1px #000; */
-} 
-
-/* .squareContent { 
-  margin: 5% 5% 0 5%;
-  border-top: 2px solid var(--pop1);
-} */
-
-/* h1.squareContent { 
-  margin-top: 10%;
-  padding-top: 3%;
-} */
-
-/* .squareContent p { 
-  padding-top: 8%;
-} */
-
 .contentIndiv {
   width: 40%;
 }
 
-.title {
-  text-align: center;
-  /* margin-bottom: 5%; */
-  /* padding-bottom: 3%; */
-  /* border-bottom: 2px solid var(--pop1); */
-}
-
-
 
 /* NAVBAR */
 header {
-  /* width: 60%; */
   display: flex;
   justify-content: flex-end;
   align-items: center
@@ -196,10 +150,6 @@ nav::before {
   cursor: pointer;
 }
 
-/* .projectEntire { 
-  width: fit-content;
-} */
-
 .projectInfo { 
   line-height: 2.4rem;
   display: flex;
@@ -209,36 +159,11 @@ nav::before {
 
 
 
-/* CONTACT */
-.contactTitle {
-  margin: 0 8%;
-}
-.contactList {
-  display: flex;
-  flex-direction: column;
-}
-.contactSpanTag {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* .contactATag {
-  padding: 5%;
-  font-size: 1.1rem;
-  line-height: 1.7rem;
-} */
-.contactEmailMe {
-  margin-top: 5%;
-  font-size: 1.5rem;
-}
+/* FOOTER */
 .contactIcons {
   font-size: 2rem;
   margin-bottom: 5%;
 }
-/* .contactUlTag {
-  display: flex;
-  justify-content: space-around;
-} */
 
 .contactUlTag::after {
   content: "";
@@ -250,19 +175,6 @@ nav::before {
 }
 
 
-
-/* RESUME */
-.resumeSubTitle {
-  margin: 5% 0 5% 0;
-}
-
-.resumeUl {
-  width: 100%;
-  margin-bottom: 0%;
-  font-size: 1.1rem;
-  display: flex;
-  justify-content: space-around;
-}
 
 
 
