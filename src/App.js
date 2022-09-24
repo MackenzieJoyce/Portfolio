@@ -7,6 +7,8 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import EmailForm from './pages/components/EmailForm';
 import Resume from './pages/Resume';
+import Footer from './pages/components/Footer';
+
 
 import projects from './pages/components/projects';
 
@@ -48,6 +50,7 @@ const App = () => {
           <Route path="/contact/email" element={<EmailForm />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
