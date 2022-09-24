@@ -11,6 +11,14 @@ const styles = {
   //   // border: '2px solid #f7af88',
   //   boxShadow: '0 0 5px 3px #ffdf5d'
   // }
+
+  aboutP: {
+    margin: '3% 0% 0% 0%'
+  },
+  subtitle: {
+    marginTop: '2%',
+    color: '#ffdf5d'
+  }
 };
 
 const About = () => {
@@ -18,29 +26,28 @@ const About = () => {
     <div className="content contentEntire">
       {/* <NavTabs /> */}
       <div className="contentIndiv">
+        <h1 className="squareContent">Mackenzie Joyce</h1>
+        <h4 style={styles.subtitle}>Full-Stack Web Developer</h4>
+        <p style={styles.aboutP}>Hello there!</p>
+        <p style={styles.aboutP}>
+          My focus is providing exceptional user experience with great design.
+          When creating front-end web apps, I am for a simple design with plenty
+          character to leave a great impression.
+        </p>
+        <p style={styles.aboutP}>
+          At the moment I am going through older projects and reworking them to
+          include a MERN stack. I am looking for work, so please feel free to
+          meesage me regarding opportunities... Or just say hi!
+        </p>
+      </div>
+
+      <div className="squareContent">
         <div className="title aboutTitle">
           <img
             style={styles.profile}
             src={require('../assets/img/businessProfile.jpeg')}
             alt="Mackenzie Joyce"
           />
-        </div>
-        <h1 className='squareContent'>Mackenzie Joyce</h1>
-      </div>
-      <div className="contentIndiv">
-        <h2 className="title aboutTitle">Front-End Web Developer</h2>
-        <div className='squareContent'>
-          <p>
-            I am a recent graduate of a full-stack coding bootcamp. My strong
-            suit is creating web apps that are clean and simple, yet still have
-            character and draw people in.
-          </p>
-          <p>
-            Moving forward, I will be honing my skills in front-end frameworks
-            and libraries, and continuing my practice in back-end development. I
-            am looking for work, so please feel free to meesage me regarding
-            opportunities... Or just say hi!
-          </p>
         </div>
       </div>
     </div>
