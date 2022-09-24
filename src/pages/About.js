@@ -13,14 +13,14 @@ const styles = {
   // }
 
   aboutP: {
-    margin: '3% 0% 0% 0%'
+    margin: '2% 0% 0% 0%'
   },
   subtitle: {
-    marginTop: '2%',
+    margin: '2% 0 7% 0',
     color: '#ffdf5d'
   },
   button: {
-    marginTop: '5%'
+    marginTop: '4%'
     // display: 'flex',
     // justifyContent: 'center'
   }
@@ -32,8 +32,8 @@ const About = () => {
       {/* <NavTabs /> */}
       <div className="contentIndiv">
         <h1 className="squareContent">Mackenzie Joyce</h1>
-        <h4 style={styles.subtitle}>Full-Stack Web Developer</h4>
-        <p style={styles.aboutP}>Hello there!</p>
+        <h3 style={styles.subtitle}>Full-Stack Web Developer</h3>
+        <p>Hello there!</p>
         <p style={styles.aboutP}>
           My focus is providing exceptional user experience with great design.
           When creating front-end web apps, I am for a simple design with plenty

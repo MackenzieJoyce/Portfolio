@@ -59,13 +59,13 @@ const NavTabs = () => {
         </Link> */}
         <Link style={styles.navTab} className="navTab" to="/contact">
           <FontAwesomeIcon icon={faPhone} />
-          <span>Blog</span>
+          <span>BLOG</span>
         </Link>
         {/* <Link style={styles.navTab} className="navTab" to="/resume">
           <FontAwesomeIcon icon={faFileLines} />
           <span>RESUME</span>
         </Link> */}
-        <button className="btn" title="Resume" onClick={onDownload}>
+        <button style={styles.navTab} className="btn" title="Resume" onClick={onDownload}>
           Resume
         </button>{' '}
       </nav>
