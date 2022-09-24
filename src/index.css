@@ -1,7 +1,7 @@
 /* VARIABLES */
 :root { 
   --dark: #1d1d1d;
-  --middle: rgba(255, 255, 255, 0.16);
+  --middle: rgba(255, 255, 255, 0.047);
   --pop1: #ffdf5d;
   --pop2: #FF8E53;
   --light: #fff;
@@ -55,9 +55,9 @@ p {
   margin-top: 1.5rem;
 } */
 
-li {
+/* li {
   margin: 15% 0;
-}
+} */
 
 .standout { 
   color: var(--pop2);
@@ -109,40 +109,40 @@ img {
 
 .contentEntire {
   width: 70%;
-  height: 500px;
+  /* height: 100vh; */
   padding-top: 2%;
-  background: var(--middle);
+  /* background: var(--middle); */
   text-align: center;
-  border: 1px solid slategrey;
+  /* border: 1px solid slategrey;
   border-radius: 5px;
-  box-shadow: var(--boxShadow);
+  box-shadow: 0 0 10px 1px #000; */
 } 
 
 .contentLittle { 
   width: 50%;
-  height: 500px;
+  /* height: 500px; */
   /* min-width: fit-content; */
   padding-top: 2%;
-  background: var(--middle);
+  /* background: var(--middle); */
   text-align: center;
-  border: 1px solid slategrey;
+  /* border: 1px solid slategrey;
   border-radius: 5px;
-  box-shadow: var(--boxShadow);
+  box-shadow: var(--boxShadow); */
 }
 
-.squareContent { 
+/* .squareContent { 
   margin: 5% 5% 0 5%;
   border-top: 2px solid var(--pop1);
-}
+} */
 
 h1.squareContent { 
   margin-top: 10%;
   padding-top: 3%;
 }
 
-.squareContent p { 
+/* .squareContent p { 
   padding-top: 8%;
-}
+} */
 
 .contentIndiv {
   width: 40%;
@@ -161,7 +161,7 @@ h1.squareContent {
 header {
   width: 60%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center
 }
 
@@ -258,22 +258,31 @@ nav {
   flex-direction: column;
   align-items: center;
 }
-.contactATag {
+/* .contactATag {
   padding: 5%;
   font-size: 1.1rem;
   line-height: 1.7rem;
-}
+} */
 .contactEmailMe {
   margin-top: 5%;
   font-size: 1.5rem;
 }
 .contactIcons {
-  font-size: 2.4rem;
+  font-size: 2rem;
   margin-bottom: 5%;
 }
-.contactUlTag {
+/* .contactUlTag {
   display: flex;
   justify-content: space-around;
+} */
+
+.contactUlTag::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--light);
 }
 
 
@@ -294,6 +303,9 @@ nav {
 
 
 /* MEDIA QUERIES */
+/*  */
+
+
 /* 770 */
 @media screen and (max-width: 770px) {
   /* EVERY PAGE */
