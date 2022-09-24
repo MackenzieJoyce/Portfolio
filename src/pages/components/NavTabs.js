@@ -1,7 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faCode, faPhone, faFileLines } from '@fortawesome/free-solid-svg-icons';
+import {
+  faUser,
+  faCode,
+  faPhone,
+  faFileLines
+} from '@fortawesome/free-solid-svg-icons';
 
 const styles = {
   // header: {
@@ -16,42 +21,53 @@ const styles = {
   //   display: 'flex',
   //   justifyContent: 'space-around'
   // },
-  // navTab: { 
+  // navTab: {
   //   minHeight: 42,
   //   display: 'flex',
-  //   flexDirection: 'column', 
+  //   flexDirection: 'column',
   //   justifyContent: 'space-between',
-  //   padding: '3%', 
+  //   padding: '3%',
   // }
 };
 
 const NavTabs = () => {
+  const onDownload = () => {
+    const press = document.createElement('a');
+    press.download = `Resume_Mackenzie_Joyce.pdf`;
+    press.href = '../../public/Resume_Mackenzie_Joyce.pdf';
+    press.click();
+  };
 
   return (
     <header style={styles.header}>
-      <nav
-        style={styles.nav}
-        aria-label="styled tabs"
-      >
-        <Link style={styles.navTab} className='navTab' to="/">
+      <nav style={styles.nav} aria-label="styled tabs">
+        {/* <Link style={styles.navTab} className='navTab' to="/">
           <FontAwesomeIcon icon={faUser} />
           <span>ABOUT</span>
-        </Link>
-
-        {/* <Link style={styles.navTab} className='navTab mobileView' to="/portfolio">
+        </Link> */}
+        <Link
+          style={styles.navTab}
+          className="navTab mobileView"
+          to="/portfolio"
+        >
           <FontAwesomeIcon icon={faCode} />
           <span>PORTFOLIO</span>
-        </Link> */}
-
+        </Link>
         {/* <Link style={styles.navTab} className='navTab' to="/contact">
           <FontAwesomeIcon icon={faPhone} />
           <span>CONTACT</span>
         </Link> */}
-
-        <Link style={styles.navTab} className='navTab' to="/resume">
+        <Link style={styles.navTab} className="navTab" to="/contact">
+          <FontAwesomeIcon icon={faPhone} />
+          <span>Blog</span>
+        </Link>
+        {/* <Link style={styles.navTab} className="navTab" to="/resume">
           <FontAwesomeIcon icon={faFileLines} />
           <span>RESUME</span>
-        </Link>
+        </Link> */}
+        <button className="btn" title="Resume" onClick={onDownload}>
+          Resume
+        </button>{' '}
       </nav>
     </header>
   );
