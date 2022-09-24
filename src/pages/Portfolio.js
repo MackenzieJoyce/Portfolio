@@ -5,6 +5,10 @@ import Carousel from 'react-bootstrap/Carousel';
 // import Project from './components/Project';
 
 const styles = {
+  subtitle: {
+    margin: '0 0 1% 18%',
+    color: '#ffdf5d'
+  },
   projectContainer: {
     display: 'flex',
     justifyContent: 'center'
@@ -41,41 +45,42 @@ const Portfolio = ({ projects }) => {
   };
 
   return (
-    <div className="contentEntire" style={styles.projectContainer}>
-      <Carousel
-        style={styles.carousel}
-        activeIndex={index}
-        onSelect={handleSelect}
-      >
-        {/* Bringing in the Project component as a prop */}
-        {projects.map((project) => (
-          // <Project key={project.id} project={project} />
-          <Carousel.Item key={project.id} style={styles.inner}>
-            <img
-              src={project.img}
-              alt={project.title}
-              style={styles.img}
-              className="projectImg"
-            />
-            <Carousel.Caption
-              className="carouselCaption"
-            >
-              <a
-                href={project.link}
-                style={styles.carouselCaption}
-                target="_blank"
-                rel="noopener noreferrer"
-                // className="projectEntire"
-              >
-                <h3>{project.title}</h3>
-                <p style={styles.innerText}>{project.tech}</p>
-                <p style={styles.innerText}>{project.text}</p>
-              </a>
-            </Carousel.Caption>
-          </Carousel.Item>
-        ))}
-      </Carousel>
-      {/* <Carousel activeIndex={index} onSelect={handleSelect}>
+    <>
+      <h2 style={styles.subtitle}>Projects</h2>
+
+      <div className="contentEntire" style={styles.projectContainer}>
+        <Carousel
+          style={styles.carousel}
+          activeIndex={index}
+          onSelect={handleSelect}
+        >
+          {/* Bringing in the Project component as a prop */}
+          {projects.map((project) => (
+            // <Project key={project.id} project={project} />
+            <Carousel.Item key={project.id} style={styles.inner}>
+              <img
+                src={project.img}
+                alt={project.title}
+                style={styles.img}
+                className="projectImg"
+              />
+              <Carousel.Caption className="carouselCaption">
+                <a
+                  href={project.link}
+                  style={styles.carouselCaption}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  // className="projectEntire"
+                >
+                  <h3>{project.title}</h3>
+                  <p style={styles.innerText}>{project.tech}</p>
+                  <p style={styles.innerText}>{project.text}</p>
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+        {/* <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
             <h3>One</h3>
         </Carousel.Item>
@@ -86,7 +91,8 @@ const Portfolio = ({ projects }) => {
             <h3>Three</h3>
         </Carousel.Item>
       </Carousel> */}
-    </div>
+      </div>
+    </>
   );
 };
 
