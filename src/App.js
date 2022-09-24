@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import NavTabs from './pages/components/NavTabs';
+// import Main from './pages/Main';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import EmailForm from './pages/components/EmailForm';
 import Resume from './pages/Resume';
 import Footer from './pages/components/Footer';
-
 
 import projects from './pages/components/projects';
 
@@ -38,9 +38,10 @@ const App = () => {
           currentPage={currentPage}
           handlePageChange={handlePageChange}
         />
-        {/* {renderPage()} */}
 
         <Routes>
+          {/* <Main path="/" element={<Main />} /> */}
+
           <Route path="/" element={<About />} />
           <Route
             path="/portfolio"
