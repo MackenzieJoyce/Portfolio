@@ -117,18 +117,6 @@ img {
   box-shadow: 0 0 10px 1px #000; */
 } 
 
-.contentLittle { 
-  width: 50%;
-  /* height: 500px; */
-  /* min-width: fit-content; */
-  padding-top: 2%;
-  /* background: var(--middle); */
-  text-align: center;
-  /* border: 1px solid slategrey;
-  border-radius: 5px;
-  box-shadow: var(--boxShadow); */
-}
-
 /* .squareContent { 
   margin: 5% 5% 0 5%;
   border-top: 2px solid var(--pop1);
