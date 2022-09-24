@@ -1,7 +1,7 @@
 /* VARIABLES */
 :root { 
   --dark: #1d1d1d;
-  --middle: rgba(255, 255, 255, 0.047);
+  --middle: #ffffff0c;
   --pop1: #ffdf5d;
   --pop2: #FF8E53;
   --light: #fff;
@@ -203,44 +203,10 @@ nav::before {
 
 
 /* PORTFOLIO */
-/* Pushes the text out of view when it is supposed to fit into the carousel */ 
-/* Makes the width 100% on the browser */
-/* Only effects the content within the container */
-.contentLittle .carousel-root { 
-  width: 100%;
+.carouselCaption:hover {
+  color: var(--pop1);
+  cursor: pointer;
 }
-
-/* .carousel-root { 
-  width: 100%;
-} */
-
-/* Hides the "# out of #" label in top right corner */
-.contentLittle .carousel .carousel-status { 
-  display: none;
-}
-
-/* No noticable change */
-/* .contentEntire .carousel .slider-wrapper { 
-  overflow: visible;
-} */
-
-/* Keeps all content + the Next arrows within the carousel */
-.carousel.carousel-slider { 
-  height: 100%;
-}
-
-/* Leave these next two as rgb because of opacity value */
-.carousel.carousel-slider button.control-arrow  { 
-  background: rgb(255, 142, 83, 0.7);
-}
-
-.carousel.carousel-slider button.control-arrow:hover{ 
-  background: rgb(255, 223, 93, 0.7);
-}
-
-/* .carousel.carousel-slider .control-dots { 
-  display: none; 
-} */
 
 /* .projectEntire { 
   width: fit-content;
