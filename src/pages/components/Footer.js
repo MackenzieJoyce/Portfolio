@@ -3,7 +3,7 @@ import { FaGithub, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
 
 const styles = {
   ul: {
-    width: '100%',
+    // width: '100%',
     //   margin: '0 5%',
     position: 'fixed',
     bottom: 0,
@@ -20,7 +20,7 @@ const styles = {
 
 const Footer = () => {
   return (
-    <ul className="contactUlTag squareContent" style={styles.ul}>
+    <ul className="contactUlTag" style={styles.ul}>
       <li className="contactATag" style={styles.a}>
         <a
           href="https://github.com/MackenzieJoyce"
