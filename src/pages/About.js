@@ -28,7 +28,7 @@ const styles = {
 
 const About = () => {
   return (
-    <div className="content contentEntire">
+    <div className="content">
       {/* <NavTabs /> */}
       <div className="contentIndiv">
         <h1 className="squareContent">Mackenzie Joyce</h1>

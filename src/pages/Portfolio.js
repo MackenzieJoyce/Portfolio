@@ -48,7 +48,7 @@ const Portfolio = ({ projects }) => {
     <>
       <h2 style={styles.subtitle}>Projects</h2>
 
-      <div className="contentEntire" style={styles.projectContainer}>
+      <div className="content" style={styles.projectContainer}>
         <Carousel
           style={styles.carousel}
           activeIndex={index}
