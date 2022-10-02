@@ -194,7 +194,7 @@ nav::before {
 
 /* MEDIA QUERIES */
 
-/* 770 */
+/* 870 */
 @media screen and (max-width: 870px) {
   /* EVERY PAGE */
   .content 
@@ -274,3 +274,10 @@ nav::before {
   }
 } 
 
+/* 530 */
+@media screen and (max-width: 530px) {
+    /* EVERY PAGE */
+  .contentIndiv { 
+    width: 70%;
+  } 
+}
