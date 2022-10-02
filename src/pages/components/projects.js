@@ -41,11 +41,11 @@ const projects = [
   },
   {
     id: 6,
-    img: require('../../assets/img/techBlog.png'),
-    title: 'Tech Blog',
+    img: require('../../assets/img/socialize.png'),
+    title: 'Socialize',
     text: 'Make an account, share thoughts, interact with others',
-    tech: 'Express',
-    link: 'https://github.com/MackenzieJoyce/tech-blog'
+    tech: 'NoSQL',
+    link: 'https://github.com/MackenzieJoyce/Social-Media-For-All'
   },
   {
     id: 7,
