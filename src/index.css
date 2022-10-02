@@ -153,6 +153,24 @@ nav::before {
 
 
 /* PORTFOLIO */
+.carouselOfProjects { 
+  display: flex;
+}
+
+.listedProjects { 
+  display: none;
+}
+
+.carousel-indicators { 
+  padding: 0;
+  margin: 0;
+  bottom: -8%;
+}
+
+div.carousel-indicators button.active { 
+  background-color: var(--pop1) !important;
+}
+
 .carouselCaption:hover {
   color: var(--pop1);
   cursor: pointer;
@@ -193,9 +211,43 @@ nav::before {
 
 
 /* MEDIA QUERIES */
+/* 1150 */
+@media screen and (max-width: 1150px) {
+  /* PORTFOLIO */
+  .carousel.slide { 
+    width: 95% !important; 
+  }
 
-/* 870 */
-@media screen and (max-width: 870px) {
+  .carouselOfProjects { 
+    display: none;
+  }
+
+  .listedProjects { 
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .listedProjectContainer { 
+    margin-bottom: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .listedProjectCaption { 
+    width: 80%;
+    padding: 2%;
+    background: #161616;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+/* 871 */
+@media screen and (max-width: 871px) {
   /* EVERY PAGE */
   .content 
   {
@@ -266,18 +318,18 @@ nav::before {
     font-size: 1rem;
   }
   */
-
-  /* PORTFOLIO */
-
-  .carousel.slide { 
-    width: 95% !important; 
-  }
 } 
 
-/* 530 */
-@media screen and (max-width: 530px) {
+
+
+/* 571 */
+@media screen and (max-width: 571px) {
     /* EVERY PAGE */
   .contentIndiv { 
     width: 70%;
   } 
+
+  .listedProjects { 
+    width: 90%;
+  }
 }
