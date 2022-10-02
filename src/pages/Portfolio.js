@@ -5,10 +5,6 @@ import Carousel from 'react-bootstrap/Carousel';
 // import Project from './components/Project';
 
 const styles = {
-  subtitle: {
-    margin: '0 0 1% 18%',
-    color: '#ffdf5d'
-  },
   projectContainer: {
     display: 'flex',
     justifyContent: 'center'
@@ -45,9 +41,8 @@ const Portfolio = ({ projects }) => {
   };
 
   return (
-    <>
+    <div className='contentPages'>
       <h2 style={styles.subtitle}>Projects</h2>
-
       <div className="content" style={styles.projectContainer}>
         <Carousel
           style={styles.carousel}
@@ -92,7 +87,7 @@ const Portfolio = ({ projects }) => {
         </Carousel.Item>
       </Carousel> */}
       </div>
-    </>
+    </div>
   );
 };
 

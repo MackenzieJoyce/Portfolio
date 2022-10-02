@@ -35,9 +35,8 @@ const About = () => {
 
   return (
     <div className="content">
-      {/* <NavTabs /> */}
       <div className="contentIndiv">
-        <h1 className="squareContent">Mackenzie Joyce</h1>
+        <h1>Mackenzie Joyce</h1>
         <h3 style={styles.subtitle}>Full-Stack Web Developer</h3>
         <p>Hello there!</p>
         <p style={styles.aboutP}>
@@ -53,19 +52,22 @@ const About = () => {
         <button className="btn" style={styles.button} title="Email Me">
           Email Me
         </button>
-        <button className="btn" style={styles.button} title="Resume" onClick={onDownload}>
+        <button
+          className="btn"
+          style={styles.button}
+          title="Resume"
+          onClick={onDownload}
+        >
           Download my Resume
         </button>
       </div>
 
-      <div className="squareContent">
-        <div className="title aboutTitle">
-          <img
-            style={styles.profile}
-            src={require('../assets/img/businessProfile.jpeg')}
-            alt="Mackenzie Joyce"
-          />
-        </div>
+      <div className="aboutImg">
+        <img
+          style={styles.profile}
+          src={require('../assets/img/businessProfile.jpeg')}
+          alt="Mackenzie Joyce"
+        />
       </div>
     </div>
   );
