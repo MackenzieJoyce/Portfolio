@@ -20,13 +20,19 @@ const styles = {
     color: '#ffdf5d'
   },
   button: {
-    marginTop: '4%'
-    // display: 'flex',
-    // justifyContent: 'center'
+    width: 'fit-content',
+    margin: '4% 4% 0 0'
   }
 };
 
 const About = () => {
+  const onDownload = () => {
+    const press = document.createElement('a');
+    press.download = `Resume_Mackenzie_Joyce.pdf`;
+    press.href = '../../public/Resume_Mackenzie_Joyce.pdf';
+    press.click();
+  };
+
   return (
     <div className="content">
       {/* <NavTabs /> */}
@@ -46,6 +52,9 @@ const About = () => {
         </p>
         <button className="btn" style={styles.button} title="Email Me">
           Email Me
+        </button>
+        <button className="btn" style={styles.button} title="Resume" onClick={onDownload}>
+          Download my Resume
         </button>
       </div>
 
