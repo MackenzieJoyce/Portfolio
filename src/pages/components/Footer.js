@@ -3,14 +3,11 @@ import { FaGithub, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
 
 const styles = {
   ul: {
-    // width: '100%',
-    //   margin: '0 5%',
     position: 'fixed',
     bottom: 0,
-    left: 10,
+    left: 30,
     display: 'flex',
     flexDirection: 'column',
-    // justifyContent: 'flex-end'
     alignItems: 'center'
   },
   a: {
