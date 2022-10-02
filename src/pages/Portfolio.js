@@ -3,6 +3,8 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const styles = {
   projectContainer: {
+    margin: 0,
+    padding: 0,
     display: 'flex',
     justifyContent: 'center'
   },
@@ -54,7 +56,7 @@ const Portfolio = ({ projects }) => {
 
   return (
     <div className="contentPages">
-      <h2 style={styles.subtitle}>Projects</h2>
+      <h2>Projects</h2>
       <div className="content" style={styles.projectContainer}>
         <Carousel
           className="carouselOfProjects"
