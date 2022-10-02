@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-// import { Carousel } from 'react-responsive-carousel';
 import Carousel from 'react-bootstrap/Carousel';
-
-// import Project from './components/Project';
 
 const styles = {
   projectContainer: {
@@ -15,6 +12,9 @@ const styles = {
   img: {
     width: '60%'
   },
+  listedImg: {
+    width: '80%'
+  },
   carousel: {
     width: '90%'
   },
@@ -25,11 +25,23 @@ const styles = {
     width: 'fit-content'
   },
   carouselCaption: {
-    padding: '2% 0',
+    paddingBottom: '2%',
     background: '#181818',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center'
+  },
+  projectTitleCarousel: { 
+    marginBottom: '2%'
+  },
+  projectTechCarousel: { 
+    marginBottom: '1%'
+  },
+  projectTitle: { 
+    marginBottom: '3%'
+  },
+  projectTech: { 
+    marginBottom: '3%'
   }
 };
 
@@ -41,17 +53,18 @@ const Portfolio = ({ projects }) => {
   };
 
   return (
-    <div className='contentPages'>
+    <div className="contentPages">
       <h2 style={styles.subtitle}>Projects</h2>
       <div className="content" style={styles.projectContainer}>
         <Carousel
+          className="carouselOfProjects"
+          // ^Read in the voice of Carousel of Progress
           style={styles.carousel}
           activeIndex={index}
           onSelect={handleSelect}
         >
           {/* Bringing in the Project component as a prop */}
           {projects.map((project) => (
-            // <Project key={project.id} project={project} />
             <Carousel.Item key={project.id} style={styles.inner}>
               <img
                 src={project.img}
@@ -65,28 +78,45 @@ const Portfolio = ({ projects }) => {
                   style={styles.carouselCaption}
                   target="_blank"
                   rel="noopener noreferrer"
-                  // className="projectEntire"
                 >
-                  <h3>{project.title}</h3>
-                  <p style={styles.innerText}>{project.tech}</p>
+                  <h3 style={styles.projectTitleCarousel}>{project.title}</h3>
+                  <p style={styles.projectTechCarousel}>{project.tech}</p>
                   <p style={styles.innerText}>{project.text}</p>
                 </a>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
         </Carousel>
-        {/* <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item>
-            <h3>One</h3>
-        </Carousel.Item>
-        <Carousel.Item>
-            <h3>Two</h3>
-        </Carousel.Item>
-        <Carousel.Item>
-            <h3>Three</h3>
-        </Carousel.Item>
-      </Carousel> */}
+
+        <div className="listedProjects">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="listedProjectContainer"
+              style={styles.inner}
+            >
+              <img
+                src={project.img}
+                alt={project.title}
+                style={styles.listedImg}
+                className="projectImg"
+              />
+              <div className="listedProjectCaption">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3 style={styles.projectTitle}>{project.title}</h3>
+                  <p style={styles.projectTech}>{project.tech}</p>
+                  <p>{project.text}</p>
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
+      {/* ^ End of .content */}
     </div>
   );
 };
