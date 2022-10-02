@@ -189,7 +189,7 @@ nav::before {
 /* MEDIA QUERIES */
 
 /* 770 */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 870px) {
   /* EVERY PAGE */
   .content 
   {
@@ -265,6 +265,10 @@ nav::before {
   .carousel-control-next, .carousel-control-prev, 
   .carousel-control-next, .carousel-control-next { 
     width: 5%;
+  }
+
+  .carousel.slide { 
+    width: 100% !important; 
   }
 } 
 
