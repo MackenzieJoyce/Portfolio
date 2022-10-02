@@ -40,12 +40,11 @@ const About = () => {
         <h3 style={styles.subtitle}>Full-Stack Web Developer</h3>
         <p>Hello there!</p>
         <p style={styles.aboutP}>
-          My focus is providing exceptional user experience with great design.
           When creating front-end web apps, I am for a simple design with plenty
-          character to leave a great impression.
+          character to leave a great impression. My focus is on providing exceptional user experience with great design.
         </p>
         <p style={styles.aboutP}>
-          At the moment I am going through older projects and reworking them to
+          At the moment I am reworking older to
           include a MERN stack. I am looking for work, so please feel free to
           meesage me regarding opportunities... Or just say hi!
         </p>
