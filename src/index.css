@@ -165,6 +165,12 @@ nav::before {
   align-items: center;
 }
 
+.carousel-control-next, .carousel-control-prev, 
+.carousel-control-next, .carousel-control-next { 
+  width: 5%;
+}
+
+
 
 
 /* FOOTER */
@@ -262,13 +268,9 @@ nav::before {
   */
 
   /* PORTFOLIO */
-  .carousel-control-next, .carousel-control-prev, 
-  .carousel-control-next, .carousel-control-next { 
-    width: 5%;
-  }
 
   .carousel.slide { 
-    width: 100% !important; 
+    width: 95% !important; 
   }
 } 
 
