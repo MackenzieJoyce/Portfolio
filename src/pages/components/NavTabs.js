@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faUser,
-  faCode,
-  // faPhone,
-  // faFileLines
+  faCode
 } from '@fortawesome/free-solid-svg-icons';
 
 const styles = {
@@ -31,12 +29,6 @@ const styles = {
 };
 
 const NavTabs = () => {
-  const onDownload = () => {
-    const press = document.createElement('a');
-    press.download = `Resume_Mackenzie_Joyce.pdf`;
-    press.href = '../../public/Resume_Mackenzie_Joyce.pdf';
-    press.click();
-  };
 
   return (
     <header style={styles.header}>
@@ -53,17 +45,6 @@ const NavTabs = () => {
           <FontAwesomeIcon icon={faCode} />
           <span>PORTFOLIO</span>
         </Link>
-        {/* <Link style={styles.navTab} className='navTab' to="/contact">
-          <FontAwesomeIcon icon={faPhone} />
-          <span>CONTACT</span>
-        </Link> */}
-        {/* <Link style={styles.navTab} className="navTab" to="/resume">
-          <FontAwesomeIcon icon={faFileLines} />
-          <span>RESUME</span>
-        </Link> */}
-        <button style={styles.navTab} className="btn" title="Resume" onClick={onDownload}>
-          Resume
-        </button>{' '}
       </nav>
     </header>
   );
