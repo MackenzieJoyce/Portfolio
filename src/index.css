@@ -260,5 +260,11 @@ nav::before {
     font-size: 1rem;
   }
   */
+
+  /* PORTFOLIO */
+  .carousel-control-next, .carousel-control-prev, 
+  .carousel-control-next, .carousel-control-next { 
+    width: 5%;
+  }
 } 
 
