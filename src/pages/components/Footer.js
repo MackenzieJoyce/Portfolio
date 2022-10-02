@@ -5,7 +5,7 @@ const styles = {
   ul: {
     position: 'fixed',
     bottom: 0,
-    left: 30,
+    left: "3%",
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center'
