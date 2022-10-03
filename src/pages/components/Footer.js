@@ -20,7 +20,6 @@ const Footer = () => {
     <ul className="contactUlTag" style={styles.ul}>
       <li className="contactATag" style={styles.a}>
         <a
-          className='Link'
           href="https://github.com/MackenzieJoyce"
           target="_blank"
           rel="noopener noreferrer"
@@ -34,7 +33,6 @@ const Footer = () => {
 
       <li className="contactATag" style={styles.a}>
         <a
-          className='Link'
           href="https://www.linkedin.com/in/mackenziejoyce/"
           target="_blank"
           rel="noopener noreferrer"
@@ -48,7 +46,6 @@ const Footer = () => {
 
       <li className="contactATag" style={styles.a}>
         <a
-          className='Link'
           href="https://twitter.com/FreshCodeFish"
           target="_blank"
           rel="noopener noreferrer"

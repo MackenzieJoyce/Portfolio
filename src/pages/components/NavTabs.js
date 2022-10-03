@@ -40,13 +40,13 @@ const NavTabs = () => {
         </Link>
         <Link
           style={styles.navTab}
-          className="navTab Link"
+          className="navTab"
           to="/portfolio"
         >
           <FontAwesomeIcon icon={faCode} />
           <span>PORTFOLIO</span>
         </Link>
-        <Link style={styles.navTab} className='navTab Link' to="/contact-me">
+        <Link style={styles.navTab} className='navTab' to="/contact-me">
           <FontAwesomeIcon icon={faEnvelope} />
           <span>Contact Me</span>
         </Link>
