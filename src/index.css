@@ -211,7 +211,7 @@ div.carousel-indicators button.active {
 
 
 /* MEDIA QUERIES */
-/* 1150 */
+/* 1150 - Between Large Laptop and Laptop */
 @media screen and (max-width: 1150px) {
   /* PORTFOLIO */
   .carousel.slide { 
@@ -246,7 +246,7 @@ div.carousel-indicators button.active {
 
 
 
-/* 871 */
+/* 871 - Between Laptop and Tablet */
 @media screen and (max-width: 871px) {
   /* EVERY PAGE */
   .content 
@@ -322,7 +322,7 @@ div.carousel-indicators button.active {
 
 
 
-/* 571 */
+/* 571 - Between Tablet and Large Phones */
 @media screen and (max-width: 571px) {
     /* EVERY PAGE */
   .contentIndiv { 
@@ -344,11 +344,48 @@ div.carousel-indicators button.active {
 
 
 
-/* 380 */
+/* 380 - Between Large and Medium Phones */
 @media screen and (max-width: 380px) {
   /* GENERAL AND TYPOGRPHY */
   h1,
   h2 { 
     font-size: 2.8rem;
   }
+}
+
+
+
+
+
+/* 320 - Small Phones */
+@media screen and (max-width: 320px) {
+  /* GENERAL AND TYPOGRAPHY */
+  h1, 
+  h2, 
+  h3 { 
+    font-size: 2rem;
+  }
+
+  .content, 
+  .contentPages { 
+    margin: 5% 3% 0% 3%;
+  }
+
+
+
+
+  /* ABOUT */
+  .aboutImg img { 
+    margin: 5%;
+  }
+
+
+
+
+  /* FOOTER */
+  .contactIcons {
+    font-size: 1.8rem;
+    margin-bottom: 30%;
+  }
+
 }
