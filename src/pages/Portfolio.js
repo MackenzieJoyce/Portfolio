@@ -37,7 +37,8 @@ const styles = {
     marginBottom: '2%'
   },
   projectTechCarousel: { 
-    marginBottom: '1%'
+    marginBottom: '1%',
+    color: '#ffdf5d'
   },
   projectTitle: { 
     marginBottom: '3%'
