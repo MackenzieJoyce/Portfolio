@@ -29,8 +29,8 @@ const ContactMe = () => {
   return (
     <main className="contentPages">
       <h2>Contact Me</h2>
-      <div className="content">
-        <Form style={styles.formContainer} ref={form} onSubmit={sendEmail}>
+      <div className="contentIndiv">
+        <Form className='formContainer' style={styles.formContainer} ref={form} onSubmit={sendEmail}>
             <Form.Group controlId="formBasicName">
               <Form.Label>Name</Form.Label>
               <Form.Control type="text" name="user_name" />
@@ -54,15 +54,9 @@ const ContactMe = () => {
 
 const styles = {
   formContainer: {
-    minWidth: '500px',
-    minHeight: '400px',
-    padding: '5%',
     background: '#181818',
     border: 'none',
     borderRadius: '5px',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
   }
 }
 
