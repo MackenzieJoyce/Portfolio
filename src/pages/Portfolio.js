@@ -29,6 +29,8 @@ const styles = {
   carouselCaption: {
     paddingBottom: '2%',
     background: '#181818',
+    border: 'none',
+    borderRadius: '5px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center'
