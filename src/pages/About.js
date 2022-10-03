@@ -40,7 +40,7 @@ const About = () => {
         <h3 style={styles.subtitle}>Full-Stack Web Developer</h3>
         <p>Hello there!</p>
         <p style={styles.aboutP}>
-          When creating front-end web apps, I am for a simple design with plenty
+          When creating front-end web apps, I am for a simple design with plenty of
           character to leave a great impression. My focus is on providing exceptional user experience with great design.
         </p>
         <p style={styles.aboutP}>
