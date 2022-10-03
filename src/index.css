@@ -329,7 +329,14 @@ div.carousel-indicators button.active {
     width: 70%;
   } 
 
+
+
+  /* PORTFOLIO */
   .listedProjects { 
     width: 90%;
   }
+
+  .contentPages h2 { 
+    margin-bottom: 5%;
+  }  
 }

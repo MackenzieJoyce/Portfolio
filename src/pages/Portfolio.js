@@ -43,7 +43,9 @@ const styles = {
     marginBottom: '3%'
   },
   projectTech: { 
-    marginBottom: '3%'
+    marginBottom: '2%',
+    fontSize: '.9rem',
+    color: '#ffdf5d'
   }
 };
 
