@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
-const EmailForm = () => {
+const ContactMe = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -9,10 +9,10 @@ const EmailForm = () => {
 
     emailjs
       .sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        process.env.YOUR_SERVICE_ID,
+        process.env.YOUR_TEMPLATE_ID,
         form.current,
-        'YOUR_PUBLIC_KEY'
+        process.env.YOUR_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -39,4 +39,4 @@ const EmailForm = () => {
   );
 };
 
-export default EmailForm;
+export default ContactMe;
