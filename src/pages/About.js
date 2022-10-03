@@ -44,7 +44,7 @@ const About = () => {
           character to leave a great impression. My focus is on providing exceptional user experience with great design.
         </p>
         <p style={styles.aboutP}>
-          At the moment I am reworking older to
+          At the moment I am reworking older projects to
           include a MERN stack. I am looking for work, so please feel free to
           meesage me regarding opportunities... Or just say hi!
         </p>
