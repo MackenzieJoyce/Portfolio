@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faUser,
   faCode,
-  FaPaperPlane
+  faEnvelopeOpen
 } from '@fortawesome/free-solid-svg-icons';
 
 const styles = {
@@ -47,7 +47,7 @@ const NavTabs = () => {
           <span>PORTFOLIO</span>
         </Link>
         <Link style={styles.navTab} className='navTab Link' to="/contact-me">
-          <FontAwesomeIcon icon={FaPaperPlane} />
+          <FontAwesomeIcon icon={faEnvelopeOpen} />
           <span>Contact Me</span>
         </Link>
       </nav>
