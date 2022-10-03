@@ -45,18 +45,13 @@ p {
   line-height: 1.6rem;
 }
 
-a {
-  color: var(--dark);
-  text-decoration: none;
-}
-
-.Link { 
+a { 
   padding-top: 2%;
   color: var(--light);
   text-decoration: none;
 }
 
-.Link:hover { 
+a:hover { 
   color: var(--pop1);
   transform: scale(1.1);
   cursor: pointer;
@@ -153,6 +148,19 @@ nav::before {
   border-radius: 200px;
   margin: 1%;
   box-shadow: 0 0 5px 3px #ffdf5d;
+}
+
+.emailMeButton{
+  padding: 0;
+}
+
+.emailMeButtonText {
+  padding: 15px 20px;
+  color: #1d1d1d;
+}
+
+.emailMeButtonText:hover {
+  color: #fff;
 }
 
 

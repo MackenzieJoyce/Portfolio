@@ -51,11 +51,11 @@ const About = () => {
           opportunities... Or just say hi!
         </p>
         <button
-          className="btn"
+          className="btn emailMeButton"
           style={styles.button}
           title="Email Address: MackenzieJoyce414@gmail.com"
         >
-          <Link to="/contact-me">
+          <Link to="/contact-me" className='emailMeButtonText'>
             Email Me
           </Link>
         </button>
