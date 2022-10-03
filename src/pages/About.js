@@ -26,6 +26,14 @@ const styles = {
 };
 
 const About = () => {
+  const handleEmailClick = () => {
+    const press = document.createElement('a');
+    press.href = 'mailto:MackenzieJoyce414@gmail.com';
+    press.target = '_blank';
+    press.rel = 'noreferrer';
+    press.click();
+  }
+
   const onDownload = () => {
     const press = document.createElement('a');
     press.download = `Resume_Mackenzie_Joyce.pdf`;
@@ -40,15 +48,21 @@ const About = () => {
         <h3 style={styles.subtitle}>Full-Stack Web Developer</h3>
         <p>Hello there!</p>
         <p style={styles.aboutP}>
-          When creating front-end web apps, I am for a simple design with plenty of
-          character to leave a great impression. My focus is on providing exceptional user experience with great design.
+          When creating front-end web apps, I am for a simple design with plenty
+          of character to leave a great impression. My focus is on providing
+          exceptional user experience with great design.
         </p>
         <p style={styles.aboutP}>
-          At the moment I am reworking older projects to
-          include a MERN stack. I am looking for work, so please feel free to
-          meesage me regarding opportunities... Or just say hi!
+          At the moment I am reworking older projects to include a MERN stack. I
+          am looking for work, so please feel free to meesage me regarding
+          opportunities... Or just say hi!
         </p>
-        <button className="btn" style={styles.button} title="Email Me">
+        <button
+          className="btn"
+          style={styles.button}
+          title="Email Address: MackenzieJoyce414@gmail.com"
+          onClick={handleEmailClick}
+        >
           Email Me
         </button>
         <button
