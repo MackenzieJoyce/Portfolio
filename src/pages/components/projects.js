@@ -4,7 +4,7 @@ const projects = [
     img: require('../../assets/img/lookingForCoders.png'),
     title: 'Looking For Coders',
     text: 'Collaborate with other coders and bring your project to life',
-    tech: 'React/Material UI/Nodejs/Express/GraphQL/MongoDB/GitHub API', 
+    tech: 'React, Material UI, Nodejs, Express, GraphQL, MongoDB, GitHub API', 
     link: 'https://github.com/LorenzoFTSIC/LFCoders'
   },
   {
@@ -12,7 +12,7 @@ const projects = [
     img: require('../../assets/img/backyardJungle.png'),
     title: 'Backyard Jungle',
     text: 'An online forum for Gardeners',
-    tech: 'Handlebars/Bootstrap/Nodejs/Express/RESTful API',
+    tech: 'Handlebars, Bootstrap, Nodejs, Express, RESTful API',
     link: 'https://github.com/Anastasia095/Backyard-Jungle'
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     img: require('../../assets/img/mixUpMovieNight.png'),
     title: 'Mix Up Movie Night',
     text: 'Your great night chosen by our app',
-    tech: 'CSS/Bulma/JavaScript',
+    tech: 'CSS, Bulma, JavaScript',
     link: 'https://github.com/Servbt/Mix-up-Movie-Night'
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     img: require('../../assets/img/nerdWall.png'),
     title: 'Conversation Ender',
     text: "Your choices matter, don't let the conversation die",
-    tech: 'CSS/JavaScript',
+    tech: 'CSS, JavaScript',
     link: 'https://github.com/MackenzieJoyce/Conversation-Ender'
   },
   {
