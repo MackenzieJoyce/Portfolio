@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faUser,
-  faCode
+  faCode,
+  FaPaperPlane
 } from '@fortawesome/free-solid-svg-icons';
 
 const styles = {
@@ -44,6 +45,10 @@ const NavTabs = () => {
         >
           <FontAwesomeIcon icon={faCode} />
           <span>PORTFOLIO</span>
+        </Link>
+        <Link style={styles.navTab} className='navTab Link' to="/">
+          <FontAwesomeIcon icon={FaPaperPlane} />
+          <span>Contact Me</span>
         </Link>
       </nav>
     </header>
