@@ -45,13 +45,18 @@ p {
   line-height: 1.6rem;
 }
 
-a { 
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.Link { 
   padding-top: 2%;
   color: var(--light);
   text-decoration: none;
 }
 
-a:hover { 
+.Link:hover { 
   color: var(--pop1);
   transform: scale(1.1);
   cursor: pointer;

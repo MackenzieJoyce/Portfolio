@@ -33,13 +33,13 @@ const NavTabs = () => {
   return (
     <header style={styles.header}>
       <nav style={styles.nav} aria-label="styled tabs">
-        <Link style={styles.navTab} className='navTab' to="/">
+        <Link style={styles.navTab} className='navTab Link' to="/">
           <FontAwesomeIcon icon={faUser} />
           <span>ABOUT</span>
         </Link>
         <Link
           style={styles.navTab}
-          className="navTab mobileView"
+          className="navTab Link"
           to="/portfolio"
         >
           <FontAwesomeIcon icon={faCode} />
