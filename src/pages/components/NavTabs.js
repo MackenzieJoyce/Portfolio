@@ -33,22 +33,22 @@ const NavTabs = () => {
 
   return (
     <header style={styles.header}>
-      <nav style={styles.nav} aria-label="styled tabs">
-        <Link style={styles.navTab} className='navTab Link' to="/">
+      <nav style={styles.nav} aria-label='styled tabs'>
+        <Link style={styles.navTab} className='navTab' to='/'>
           <FontAwesomeIcon icon={faUser} />
           <span>ABOUT</span>
         </Link>
         <Link
           style={styles.navTab}
-          className="navTab"
-          to="/portfolio"
+          className='navTab'
+          to='/portfolio'
         >
           <FontAwesomeIcon icon={faCode} />
           <span>PORTFOLIO</span>
         </Link>
-        <Link style={styles.navTab} className='navTab' to="/contact-me">
+        <Link style={styles.navTab} className='navTab' to='/contact-me'>
           <FontAwesomeIcon icon={faEnvelope} />
-          <span>Contact Me</span>
+          <span>CONTACT ME</span>
         </Link>
       </nav>
     </header>
