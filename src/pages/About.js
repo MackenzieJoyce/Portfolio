@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // import profile from '../../img/businessProfile'
 // import NavTabs from '../NavTabs';
@@ -26,14 +27,6 @@ const styles = {
 };
 
 const About = () => {
-  const handleEmailClick = () => {
-    const press = document.createElement('a');
-    press.href = 'mailto:MackenzieJoyce414@gmail.com';
-    press.target = '_blank';
-    press.rel = 'noreferrer';
-    press.click();
-  }
-
   const onDownload = () => {
     const press = document.createElement('a');
     press.download = `Resume_Mackenzie_Joyce.pdf`;
@@ -61,9 +54,10 @@ const About = () => {
           className="btn"
           style={styles.button}
           title="Email Address: MackenzieJoyce414@gmail.com"
-          onClick={handleEmailClick}
         >
-          Email Me
+          <Link to="/contact-me">
+            Email Me
+          </Link>
         </button>
         <button
           className="btn"
