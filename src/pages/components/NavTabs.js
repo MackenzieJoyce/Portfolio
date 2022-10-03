@@ -46,7 +46,7 @@ const NavTabs = () => {
           <FontAwesomeIcon icon={faCode} />
           <span>PORTFOLIO</span>
         </Link>
-        <Link style={styles.navTab} className='navTab Link' to="/">
+        <Link style={styles.navTab} className='navTab Link' to="/contact-me">
           <FontAwesomeIcon icon={FaPaperPlane} />
           <span>Contact Me</span>
         </Link>
