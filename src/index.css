@@ -340,3 +340,15 @@ div.carousel-indicators button.active {
     margin-bottom: 5%;
   }  
 }
+
+
+
+
+/* 330 */
+@media screen and (max-width: 330px) {
+  /* GENERAL AND TYPOGRPHY */
+  h1,
+  h2 { 
+    font-size: 2.8rem;
+  }
+}
