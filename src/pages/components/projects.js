@@ -47,14 +47,14 @@ const projects = [
     tech: 'NoSQL',
     link: 'https://github.com/MackenzieJoyce/Social-Media-For-All'
   },
-  {
-    id: 7,
-    img: require('../../assets/img/textEditor.png'),
-    title: 'Text Editor Extreme',
-    text: 'Install the app and take your notes on the go',
-    tech: 'JavaScript',
-    link: 'https://github.com/MackenzieJoyce/Text-Editor-Extreme'
-  }
+  // {
+  //   id: 7,
+  //   img: require('../../assets/img/textEditor.png'),
+  //   title: 'Text Editor Extreme',
+  //   text: 'Install the app and take your notes on the go',
+  //   tech: 'JavaScript',
+  //   link: 'https://github.com/MackenzieJoyce/Text-Editor-Extreme'
+  // }
 ];
 
 export default projects;
