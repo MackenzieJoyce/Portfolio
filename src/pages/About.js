@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-// import profile from '../../img/businessProfile'
-// import NavTabs from '../NavTabs';
+// import { Link } from 'react-router-dom';
 
 const About = () => {
   const onDownload = () => {
@@ -28,7 +25,10 @@ const About = () => {
           am looking for work, so please feel free to meesage me regarding
           opportunities... Or just say hi!
         </p>
-        <button
+        <p style={styles.aboutP}><span style={styles.subtitle}>Email me at: </span>
+          MackenzieJoyce414@gmail.com
+        </p>
+        {/* <button
           className="btn emailMeButton"
           style={styles.button}
           title="Email Address: MackenzieJoyce414@gmail.com"
@@ -36,7 +36,7 @@ const About = () => {
           <Link to="/contact-me" className="emailMeButtonText">
             Email Me
           </Link>
-        </button>
+        </button> */}
         <button
           className="btn"
           style={styles.button}

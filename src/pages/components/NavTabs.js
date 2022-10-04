@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faUser,
   faCode,
-  faEnvelope
+  // faEnvelope
 } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -25,10 +25,10 @@ const NavTabs = () => {
           <FontAwesomeIcon icon={faCode} />
           <span>PORTFOLIO</span>
         </Link>
-        <Link style={styles.navTab} className='navTab' to='/contact-me'>
+        {/* <Link style={styles.navTab} className='navTab' to='/contact-me'>
           <FontAwesomeIcon icon={faEnvelope} />
           <span>CONTACT ME</span>
-        </Link>
+        </Link> */}
       </nav>
     </header>
   );

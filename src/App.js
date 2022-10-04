@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavTabs from './pages/components/NavTabs';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
-import ContactMe from './pages/ContactMe';
+// import ContactMe from './pages/ContactMe';
 import Footer from './pages/components/Footer';
 
 import projects from './pages/components/projects';
@@ -36,7 +36,7 @@ const App = () => {
             path="/portfolio"
             element={<Portfolio projects={projects} />}
           />
-          <Route path="/contact-me" element={<ContactMe />} />
+          {/* <Route path="/contact-me" element={<ContactMe />} /> */}
         </Routes>
 
         <Footer />
