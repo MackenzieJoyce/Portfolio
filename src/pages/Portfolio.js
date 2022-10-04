@@ -124,7 +124,7 @@ const Portfolio = ({ projects }) => {
         </div>
       </div>
       {/* ^ End of .content */}
-    </ma>
+    </main>
   );
 };
 

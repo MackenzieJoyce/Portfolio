@@ -76,7 +76,7 @@ const About = () => {
           alt="Mackenzie Joyce"
         />
       </div>
-    </ma>
+    </main>
   );
 };
 

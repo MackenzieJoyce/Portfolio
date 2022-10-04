@@ -38,7 +38,7 @@ const Resume = () => {
           <li>MongoDB</li>
         </div>
       </ul>
-    </ma>
+    </main>
   );
 };
 
