@@ -1,20 +1,6 @@
 import React from 'react';
 import { FaGithub, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
 
-const styles = {
-  ul: {
-    position: 'fixed',
-    bottom: 0,
-    left: "3%",
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center'
-  },
-  a: {
-    padding: '10%'
-  }
-};
-
 const Footer = () => {
   return (
     <ul className="contactUlTag" style={styles.ul}>
@@ -58,6 +44,20 @@ const Footer = () => {
       </li>
     </ul>
   );
+};
+
+const styles = {
+  ul: {
+    position: 'fixed',
+    bottom: 0,
+    left: "3%",
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
+  },
+  a: {
+    padding: '10%'
+  }
 };
 
 export default Footer;

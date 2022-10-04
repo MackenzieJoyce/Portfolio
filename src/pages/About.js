@@ -4,28 +4,6 @@ import { Link } from 'react-router-dom';
 // import profile from '../../img/businessProfile'
 // import NavTabs from '../NavTabs';
 
-const styles = {
-  // profile: {
-  //   width: 320,
-  //   borderRadius: 200,
-  //   margin: '1%',
-  //   // border: '2px solid #f7af88',
-  //   boxShadow: '0 0 5px 3px #ffdf5d'
-  // }
-
-  aboutP: {
-    margin: '2% 0% 0% 0%'
-  },
-  subtitle: {
-    margin: '2% 0 7% 0',
-    color: '#ffdf5d'
-  },
-  button: {
-    width: 'fit-content',
-    margin: '4% 4% 0 0'
-  }
-};
-
 const About = () => {
   const onDownload = () => {
     const press = document.createElement('a');
@@ -55,7 +33,7 @@ const About = () => {
           style={styles.button}
           title="Email Address: MackenzieJoyce414@gmail.com"
         >
-          <Link to="/contact-me" className='emailMeButtonText'>
+          <Link to="/contact-me" className="emailMeButtonText">
             Email Me
           </Link>
         </button>
@@ -78,6 +56,28 @@ const About = () => {
       </div>
     </main>
   );
+};
+
+const styles = {
+  // profile: {
+  //   width: 320,
+  //   borderRadius: 200,
+  //   margin: '1%',
+  //   // border: '2px solid #f7af88',
+  //   boxShadow: '0 0 5px 3px #ffdf5d'
+  // }
+
+  aboutP: {
+    margin: '2% 0% 0% 0%'
+  },
+  subtitle: {
+    margin: '2% 0 7% 0',
+    color: '#ffdf5d'
+  },
+  button: {
+    width: 'fit-content',
+    margin: '4% 4% 0 0'
+  }
 };
 
 export default About;

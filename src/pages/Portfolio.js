@@ -1,57 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-const styles = {
-  projectContainer: {
-    margin: 0,
-    padding: 0,
-    display: 'flex',
-    justifyContent: 'center'
-  },
-  aTag: {
-    padding: 0
-  },
-  img: {
-    width: '60%'
-  },
-  listedImg: {
-    width: '80%'
-  },
-  carousel: {
-    width: '90%'
-  },
-  inner: {
-    textAlign: 'center'
-  },
-  innerText: {
-    width: 'fit-content'
-  },
-  carouselCaption: {
-    paddingBottom: '2%',
-    background: '#181818',
-    border: 'none',
-    borderRadius: '5px',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center'
-  },
-  projectTitleCarousel: { 
-    marginBottom: '2%'
-  },
-  projectTechCarousel: { 
-    marginBottom: '1%',
-    color: '#ffdf5d'
-  },
-  projectTitle: { 
-    marginBottom: '3%'
-  },
-  projectTech: { 
-    marginBottom: '2%',
-    fontSize: '.9rem',
-    color: '#ffdf5d'
-  }
-};
-
 const Portfolio = ({ projects }) => {
   const [index, setIndex] = useState(0);
 
@@ -126,6 +75,57 @@ const Portfolio = ({ projects }) => {
       {/* ^ End of .content */}
     </main>
   );
+};
+
+const styles = {
+  projectContainer: {
+    margin: 0,
+    padding: 0,
+    display: 'flex',
+    justifyContent: 'center'
+  },
+  aTag: {
+    padding: 0
+  },
+  img: {
+    width: '60%'
+  },
+  listedImg: {
+    width: '80%'
+  },
+  carousel: {
+    width: '90%'
+  },
+  inner: {
+    textAlign: 'center'
+  },
+  innerText: {
+    width: 'fit-content'
+  },
+  carouselCaption: {
+    paddingBottom: '2%',
+    background: '#181818',
+    border: 'none',
+    borderRadius: '5px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
+  },
+  projectTitleCarousel: {
+    marginBottom: '2%'
+  },
+  projectTechCarousel: {
+    marginBottom: '1%',
+    color: '#ffdf5d'
+  },
+  projectTitle: {
+    marginBottom: '3%'
+  },
+  projectTech: {
+    marginBottom: '2%',
+    fontSize: '.9rem',
+    color: '#ffdf5d'
+  }
 };
 
 export default Portfolio;

@@ -1,22 +1,4 @@
-// I think id needs to be useId
 import React from 'react';
-
-const styles = {
-  // underlineSmaller: {
-  //   margin: '0 8%'
-  // },
-  // subTitle: {
-  //   margin: '5% 0 5% 0'
-  // },
-  // ul: {
-  //   width: '100%',
-  //   marginBottom: '13%',
-  //   fontSize: '1.1rem',
-  //   // lineHeight: '1.7rem',
-  //   display: 'flex',
-  //   justifyContent: 'space-around'
-  // }
-};
 
 const Resume = () => {
   return (
@@ -40,6 +22,23 @@ const Resume = () => {
       </ul>
     </main>
   );
+};
+
+const styles = {
+  // underlineSmaller: {
+  //   margin: '0 8%'
+  // },
+  // subTitle: {
+  //   margin: '5% 0 5% 0'
+  // },
+  // ul: {
+  //   width: '100%',
+  //   marginBottom: '13%',
+  //   fontSize: '1.1rem',
+  //   // lineHeight: '1.7rem',
+  //   display: 'flex',
+  //   justifyContent: 'space-around'
+  // }
 };
 
 export default Resume;
