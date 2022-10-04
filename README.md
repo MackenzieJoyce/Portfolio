@@ -7,18 +7,9 @@
 Netlify: 
 https://mackenziejoyce.com/
 
-This is portfolio uses React, Material UI, and react-router-dom. When you click the above link to view the site the user is met with the About page, giving a short description about myself. The next page displays a carousel with some of my completed projects. Their are buttons to email me and to download my resume. 
+This is portfolio uses React, bootstrap, and react-router-dom. When you click the above link to view the site the user is met with the About page, giving a short description about myself. The next page displays a carousel with some of my completed projects. Their are buttons to email me and to download my resume. 
 
 </br></br>
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Use](#use)
-- [Credits](#credits)
-- [License](#license)
-- [Questions](#questions)
-  </br></br>
 
 ## Installation
 
