@@ -32,7 +32,7 @@ const ContactMe = () => {
     <main className="contentPages">
       <h2>Contact Me</h2>
       <div className="contentIndiv">
-        <Form className='formContainer' style={styles.formContainer} ref={form} onSubmit={sendEmail}>
+        <Form className='formContainer' style={styles.formContainer} action="http://mackenziejoyce.com/contact-me" ref={form} onSubmit={sendEmail}>
             <Form.Group controlId="formBasicName">
               <Form.Label>Name</Form.Label>
               <Form.Control type="text" name="user_name" />
