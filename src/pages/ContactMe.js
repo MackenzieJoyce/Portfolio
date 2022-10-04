@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+
 
 const ContactMe = () => {
   const form = useRef();
@@ -11,17 +11,19 @@ const ContactMe = () => {
 
     emailjs
       .sendForm(
-        process.env.YOUR_SERVICE_ID,
-        process.env.YOUR_TEMPLATE_ID,
+        process.env.REACT_APP_YOUR_SERVICE_ID,
+        process.env.REACT_APP_YOUR_TEMPLATE_ID,
         form.current,
-        process.env.YOUR_PUBLIC_KEY
+        process.env.REACT_APP_YOUR_PUBLIC_KEY
       )
       .then(
         (result) => {
-          console.log(result.text);
+          e.target.reset();
+          alert("Message sent!");
+          console.log("Message sent!");
         },
         (error) => {
-          console.log(error.text);
+          console.log("Uh oh...", error);
         }
       );
   };
@@ -41,11 +43,11 @@ const ContactMe = () => {
             </Form.Group>
             <Form.Group controlId="formBasicMessage">
               <Form.Label>Message</Form.Label>
-              <Form.Control as="textArea" name="message" />
+              <Form.Control as="textarea" name="message" />
             </Form.Group>
-            <Button type="submit" value="Send">
+            <button className='btn' type="submit" value="Send">
               Send
-            </Button>
+            </button>
           </Form>
         </div>
     </main>
