@@ -20,7 +20,7 @@ const styles = {
 
 const Resume = () => {
   return (
-    <div className="content">
+    <main className="content">
       <h4 className="resumeSubTitle" style={styles.subTitle}>
         Proficiencies
       </h4>
@@ -38,7 +38,7 @@ const Resume = () => {
           <li>MongoDB</li>
         </div>
       </ul>
-    </div>
+    </ma>
   );
 };
 

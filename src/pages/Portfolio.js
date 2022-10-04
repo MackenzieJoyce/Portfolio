@@ -60,7 +60,7 @@ const Portfolio = ({ projects }) => {
   };
 
   return (
-    <div className="contentPages">
+    <main className="contentPages">
       <h2>Projects</h2>
       <div className="content" style={styles.projectContainer}>
         <Carousel
@@ -124,7 +124,7 @@ const Portfolio = ({ projects }) => {
         </div>
       </div>
       {/* ^ End of .content */}
-    </div>
+    </ma>
   );
 };
 

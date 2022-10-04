@@ -35,7 +35,7 @@ const About = () => {
   };
 
   return (
-    <div className="content">
+    <main className="content">
       <div className="contentIndiv">
         <h1>Mackenzie Joyce</h1>
         <h3 style={styles.subtitle}>Full-Stack Web Developer</h3>
@@ -76,7 +76,7 @@ const About = () => {
           alt="Mackenzie Joyce"
         />
       </div>
-    </div>
+    </ma>
   );
 };
 
