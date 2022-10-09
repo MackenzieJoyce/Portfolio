@@ -13,7 +13,7 @@ const projects = [
     title: 'Backyard Jungle',
     text: 'An online forum for Gardeners',
     tech: 'Handlebars, Bootstrap, Nodejs, Express, RESTful API',
-    link: 'https://github.com/Anastasia095/Backyard-Jungle'
+    link: 'https://github.com/MackenzieJoyce/Backyard-Jungle'
   },
   {
     id: 3,
