@@ -5,7 +5,7 @@ const About = () => {
   const onDownload = () => {
     const press = document.createElement('a');
     press.download = `Resume_Mackenzie_Joyce.pdf`;
-    press.href = '../../public/Resume_Mackenzie_Joyce.pdf';
+    press.href = './Resume_Mackenzie_Joyce.pdf';
     press.click();
   };
 
