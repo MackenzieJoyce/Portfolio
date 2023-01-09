@@ -1,14 +1,22 @@
 const projects = [
   {
     id: 1,
-    img: require('../../assets/img/lookingForCoders.png'),
-    title: 'Looking For Coders',
-    text: 'Collaborate with other coders and bring your project to life',
-    tech: 'React, Material UI, Nodejs, Express, GraphQL, MongoDB, GitHub API', 
-    link: 'https://github.com/LorenzoFTSIC/LFCoders'
+    img: require('../../assets/img/launchBox.png'),
+    title: 'Launch Box',
+    text: 'Space info on the go',
+    tech: 'React, Mantine, Third Party APIs',
+    // link: 'https://github.com/MackenzieJoyce/Note-Taker-React'
   },
   {
     id: 2,
+    img: require('../../assets/img/lookingForCoders.png'),
+    title: 'Looking For Coders',
+    text: 'Collaborate with other coders and bring your project to life',
+    tech: 'React, Material UI, Nodejs, Express, GraphQL, MongoDB, GitHub API',
+    link: 'https://github.com/LorenzoFTSIC/LFCoders'
+  },
+  {
+    id: 3,
     img: require('../../assets/img/backyardJungle.png'),
     title: 'Backyard Jungle',
     text: 'An online forum for Gardeners',
@@ -16,20 +24,12 @@ const projects = [
     link: 'https://github.com/MackenzieJoyce/Backyard-Jungle'
   },
   {
-    id: 3,
+    id: 4,
     img: require('../../assets/img/mixUpMovieNight.png'),
     title: 'Mix Up Movie Night',
     text: 'Your great night chosen by our app',
     tech: 'CSS, Bulma, JavaScript',
     link: 'https://github.com/Servbt/Mix-up-Movie-Night'
-  },
-  {
-    id: 4,
-    img: require('../../assets/img/noteTaker.png'),
-    title: 'Note Tracker',
-    text: 'Simple design for all your complicated tasks',
-    tech: 'React',
-    link: 'https://github.com/MackenzieJoyce/Note-Taker-React'
   },
   {
     id: 5,
