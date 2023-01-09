@@ -5,7 +5,7 @@ const projects = [
     title: 'Launch Box',
     text: 'Space info on the go',
     tech: 'React, Mantine, Third Party APIs',
-    // link: 'https://github.com/MackenzieJoyce/Note-Taker-React'
+    link: 'https://scintillating-faun-198dd8.netlify.app'
   },
   {
     id: 2,
